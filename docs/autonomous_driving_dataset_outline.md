@@ -205,6 +205,56 @@ Project Repository: [https://github.com/KITE-Lab/autonomous-driving-dataset/](ht
 
 ---
 
+## Baseline Experiments
+
+To demonstrate the usability and benchmarking capability of our dataset, we provide several **baseline models and evaluation results**. These baselines cover both **perception tasks** (2D/3D object detection, tracking) and **system-level safety evaluation**.
+
+### 1. Perception Baselines
+
+- **2D Object Detection**  
+  - **Input**: monocular front-view or surround-view camera images.  
+  - **Model**: Faster R-CNN with ResNet-50 backbone.  
+  - **Metrics**: AP at IoU thresholds (0.5, 0.7).  
+
+- **3D Object Detection**  
+  - **Input**: multi-view images with GNSS/IMU aligned timestamps.  
+  - **Model**: BEV-based baseline (e.g., CenterNet3D, BEVFormer).  
+  - **Metrics**: mAP, mAPH (Average Precision with Heading).  
+
+- **Object Tracking**  
+  - **Input**: 20-second continuous clips.  
+  - **Model**: SORT / DeepSORT.  
+  - **Metrics**: MOTA (Multi-Object Tracking Accuracy), MOTP (Precision).  
+
+---
+
+### 2. System-Level Safety Baselines
+
+- **Driving Safety Metrics**  
+  - **Baseline**: rule-based distance keeping and lane-keeping algorithms.  
+  - **Evaluation**: frequency of safety-critical events (near-miss, emergency braking, lane departure).  
+
+- **Disengagement Prediction**  
+  - **Task**: predict whether an autonomous mode disengagement will occur in the next 5 seconds.  
+  - **Model**: LSTM-based temporal baseline.  
+  - **Metrics**: Precision, Recall, F1-score.  
+
+---
+
+### 3. Benchmark Results (Example)
+
+| Task                  | Baseline Model         | Metric      | Result (approx.) |
+|-----------------------|------------------------|-------------|------------------|
+| 2D Object Detection   | Faster R-CNN (R50)     | AP@0.5      | ~XX%             |
+| 3D Object Detection   | CenterNet3D baseline   | mAP         | ~XX%             |
+| Object Tracking       | DeepSORT               | MOTA        | ~XX              |
+| Safety Evaluation     | Rule-based controller  | Near-miss rate | ~X/100 km     |
+| Disengagement Prediction | LSTM                | F1-score    | ~XX%             |
+
+These baseline experiments provide a **starting point** for researchers and practitioners. Future work can extend towards advanced deep learning models, multi-modal fusion, and safety-critical evaluation methods.
+
+---
+
 ## Data Access & DevKit
 - **Dataset Structure**: trip → segment → frame hierarchy.  
 - **APIs & Tools**:  
