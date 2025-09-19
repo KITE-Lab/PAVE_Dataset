@@ -38,9 +38,9 @@ cameras:
         translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
       notes: "Fill with your calibrated pose from camera to vehicle frame."
       T_cam_to_vehicle_matrix_4x4:
-        - [0, 0, 1, TO_FILL_tx]
-        - [-1, 0, 0, TO_FILL_ty]
-        - [0, -1, 0, TO_FILL_tz]
+        - [0, 0, 1, -2.147]
+        - [-1, 0, 0, 0.025]
+        - [0, -1, 0, 1.65]
         - [0.0,    0.0,    0.0,     1.0]
       notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
 
@@ -70,9 +70,9 @@ cameras:
         translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
       notes: "Fill with your calibrated pose from camera to vehicle frame."
       T_cam_to_vehicle_matrix_4x4:
-        - [0, 0, 1, TO_FILL_tx]
-        - [-1, 0, 0, TO_FILL_ty]
-        - [0, -1, 0, TO_FILL_tz]
+        - [0, 0, 1, -2.147]
+        - [-1, 0, 0, -0.025]
+        - [0, -1, 0, 1.65]
         - [0.0,    0.0,    0.0,     1.0]
       notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
 
