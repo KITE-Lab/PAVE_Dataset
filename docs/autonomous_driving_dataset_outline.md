@@ -5,10 +5,15 @@ Project Repository: [https://github.com/KITE-Lab/autonomous-driving-dataset/](ht
 ---
 
 ## Motivation
-- Existing datasets (KITTI, nuScenes, Waymo, Argoverse, SemanticKITTI, etc.) mainly focus on **perception tasks** such as object detection, segmentation, and tracking.  
-- However, they are **collected from manually driven vehicles**, not from vehicles under intelligent driving mode.  
-- There is a lack of datasets that directly reflect **the behavior and performance of autonomous driving systems in real operation**.  
-- Our dataset is the **first dataset collected from autonomous vehicles while intelligent driving is activated**, aiming to support **system-level evaluation of driving safety**.  
+- Existing autonomous driving datasets can be broadly categorized into three types:  
+  - **Perception-focused datasets** (e.g., KITTI, nuScenes, Waymo, SemanticKITTI) → designed for object detection, semantic segmentation, and tracking.  
+  - **Motion prediction datasets** (e.g., Argoverse, Lyft Level 5) → emphasize forecasting future trajectories of surrounding agents.  
+  - **End-to-end datasets** (e.g., BDD100K E2E, Drive360) → focus on learning direct sensor-to-control mappings for driving policy.  
+
+- However, there is still **no dataset that integrates perception and trajectory information together**, while being **collected under autonomous driving mode** instead of manual driving.  
+
+- Our dataset is the **first dataset captured with autonomous driving engaged**, jointly providing **environmental perception** and **vehicle trajectory/behavior** data, aiming to support **comprehensive system-level evaluation of intelligent driving safety and performance**.  
+
 
 ---
 

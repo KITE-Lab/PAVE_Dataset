@@ -1,0 +1,141 @@
+meta:
+  dataset_name: Autonomous Driving Dataset
+  image_model: "Pinhole; optional distortion coefficients"
+  conventions:
+    intrinsics: "K = [[fx,0,cx],[0,fy,cy],[0,0,1]] (pixels)"
+    extrinsics_frame: >
+      T_cam_to_vehicle: rotation (w,x,y,z), translation (meters).
+      Vehicle frame: origin = front bumper center.
+        X axis = forward, Y axis = left, Z axis = up.
+      Camera frame: origin = optical center.
+        X axis = right, Y axis = down, Z axis = forward.
+    rescaling_rule: "When changing resolution from (W0,H0) to (W,H), scale fx,cx by W/W0; fy,cy by H/H0"
+
+cameras:
+  - name: CAM_FRONT_120
+    description: "Front-facing, ~120° FOV"
+    intrinsics_by_resolution:
+      2592x1944:
+        width: 2592
+        height: 1944
+        K:
+          - [1307.41, 0.0, 1275.03]
+          - [0.0, 1307.42, 944.247]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.027857, 0.0699333, 0.00266947, 0.00371724, -0.0537431]
+      1920x1080:
+        width: 1920
+        height: 1080
+        K:
+          - [971.148, 0.0, 949.041]
+          - [0.0, 972.687, 515.667]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.0319791, 0.0910344, 0.000495821, 0.00510239, -0.0810168]
+    extrinsics:
+      frame: vehicle
+      T_cam_to_vehicle:
+        rotation_quat_wxyz: [TO_FILL_w, TO_FILL_x, TO_FILL_y, TO_FILL_z]
+        translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
+      notes: "Fill with your calibrated pose from camera to vehicle frame."
+      T_cam_to_vehicle_matrix_4x4:
+        - [0, 0, 1, TO_FILL_tx]
+        - [-1, 0, 0, TO_FILL_ty]
+        - [0, -1, 0, TO_FILL_tz]
+        - [0.0,    0.0,    0.0,     1.0]
+      notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
+
+  - name: CAM_FRONT_30
+    description: "Front-facing, ~30° FOV"
+    intrinsics_by_resolution:
+      2592x1944:
+        width: 2592
+        height: 1944
+        K:
+          - [6162.5, 0.0, 1280.22]
+          - [0.0, 6180, 631.212]
+          - [0.0, 0.0, 1.0]
+        distortion: [0.322763, -19.526, -0.00192358, 0.00787925, 196.641]
+      1920x1080:
+        width: 1920
+        height: 1080
+        K:
+          - [3959.88, 0.0, 1410.08]
+          - [0.0, 3963.98, 774.569]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.622789, 10.1299, -0.00012819, -0.00229683, -123.005]
+    extrinsics:
+      frame: vehicle
+      T_cam_to_vehicle:
+        rotation_quat_wxyz: [TO_FILL_w, TO_FILL_x, TO_FILL_y, TO_FILL_z]
+        translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
+      notes: "Fill with your calibrated pose from camera to vehicle frame."
+      T_cam_to_vehicle_matrix_4x4:
+        - [0, 0, 1, TO_FILL_tx]
+        - [-1, 0, 0, TO_FILL_ty]
+        - [0, -1, 0, TO_FILL_tz]
+        - [0.0,    0.0,    0.0,     1.0]
+      notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
+
+  - name: CAM_LEFT_120
+    description: "Left-facing, ~120° FOV"
+    intrinsics_by_resolution:
+      2592x1944:
+        width: 2592
+        height: 1944
+        K:
+          - [1307.41, 0.0, 1275.03]
+          - [0.0, 1307.42, 944.247]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.027857, 0.0699333, 0.00266947, 0.00371724, -0.0537431]
+      1920x1080:
+        width: 1920
+        height: 1080
+        K:
+          - [971.148, 0.0, 949.041]
+          - [0.0, 972.687, 515.667]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.0319791, 0.0910344, 0.000495821, 0.00510239, -0.0810168]
+    extrinsics:
+      frame: vehicle
+      T_cam_to_vehicle:
+        rotation_quat_wxyz: [TO_FILL_w, TO_FILL_x, TO_FILL_y, TO_FILL_z]
+        translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
+      notes: "Fill with your calibrated pose from camera to vehicle frame."
+      T_cam_to_vehicle_matrix_4x4:
+        - [1, 0, 0, TO_FILL_tx]
+        - [0, 0, 1, TO_FILL_ty]
+        - [0, -1, 0, TO_FILL_tz]
+        - [0.0,    0.0,    0.0,     1.0]
+      notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
+
+  - name: CAM_RIGHT_120
+    description: "Right-facing, ~120° FOV"
+    intrinsics_by_resolution:
+      2592x1944:
+        width: 2592
+        height: 1944
+        K:
+          - [1307.41, 0.0, 1275.03]
+          - [0.0, 1307.42, 944.247]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.027857, 0.0699333, 0.00266947, 0.00371724, -0.0537431]
+      1920x1080:
+        width: 1920
+        height: 1080
+        K:
+          - [971.148, 0.0, 949.041]
+          - [0.0, 972.687, 515.667]
+          - [0.0, 0.0, 1.0]
+        distortion: [-0.0319791, 0.0910344, 0.000495821, 0.00510239, -0.0810168]
+    extrinsics:
+      frame: vehicle
+      T_cam_to_vehicle:
+        rotation_quat_wxyz: [TO_FILL_w, TO_FILL_x, TO_FILL_y, TO_FILL_z]
+        translation_xyz_m: [TO_FILL_x, TO_FILL_y, TO_FILL_z]
+      notes: "Fill with your calibrated pose from camera to vehicle frame."
+      T_cam_to_vehicle_matrix_4x4:
+        - [-1, 0, 0, TO_FILL_tx]
+        - [0, 0, -1, TO_FILL_ty]
+        - [0, -1, 0, TO_FILL_tz]
+        - [0.0,    0.0,    0.0,     1.0]
+      notes: "Pose maps camera coords to vehicle coords. Fill with your calibrated values."
