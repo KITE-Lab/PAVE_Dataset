@@ -1,0 +1,113 @@
+PAVE Academic Non-Commercial License
+Version 1.0
+
+Copyright (c) 2025
+PAVE Dataset Authors
+[kema@hksut-gz.edu.cn]
+
+----------------------------------------------------------------------
+1. Grant of License
+----------------------------------------------------------------------
+
+This dataset (the “Dataset”) is made available for use under this
+Academic Non-Commercial License.
+
+Permission is hereby granted, free of charge, to any person or entity
+obtaining a copy of the Dataset, to use the Dataset solely for
+non-commercial academic research and educational purposes, subject to
+the conditions below.
+
+----------------------------------------------------------------------
+2. Permitted Uses
+----------------------------------------------------------------------
+
+The Dataset may be used for:
+
+- Academic research and scientific investigation;
+- Method development, validation, and benchmarking;
+- Publication in peer-reviewed journals, conferences, theses, and
+  dissertations;
+- Non-commercial teaching and educational activities.
+
+----------------------------------------------------------------------
+3. Prohibited Uses
+----------------------------------------------------------------------
+
+The following uses are strictly prohibited without prior written
+permission from the Dataset owners:
+
+- Any commercial use, including but not limited to:
+  * product or system development;
+  * internal industrial evaluation or benchmarking;
+  * model training for deployment;
+  * consulting, contract research, or paid services;
+- Redistribution, resale, sublicensing, or sharing of the Dataset or
+  any modified or derived version thereof;
+- Use of the Dataset in any proprietary or closed-source commercial
+  system.
+
+Commercial or industrial use requires a separate licensing agreement.
+
+----------------------------------------------------------------------
+4. Citation Requirement
+----------------------------------------------------------------------
+
+Any publication, presentation, report, or derivative work that makes
+use of the Dataset (in whole or in part) MUST include proper citation
+of the following paper:
+
+Li, X., Wang, C., Liu, Y., He, D., Zhang, J., Ma, K.
+"PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation"
+arXiv:2511.14185, 2025.
+
+Failure to provide proper citation constitutes misuse of the Dataset.
+
+----------------------------------------------------------------------
+5. Authorship
+----------------------------------------------------------------------
+
+Use of the Dataset does NOT grant any right to authorship or co-authorship.
+
+The Dataset authors shall not be listed as authors unless they have made
+a substantial intellectual contribution to the corresponding research
+work.
+
+----------------------------------------------------------------------
+6. No Warranty
+----------------------------------------------------------------------
+
+THE DATASET IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+THE AUTHORS AND COPYRIGHT HOLDERS SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE DATASET.
+
+----------------------------------------------------------------------
+7. Termination
+----------------------------------------------------------------------
+
+This license is automatically terminated if any of the above conditions
+are violated. Upon termination, all copies of the Dataset must be
+deleted.
+
+----------------------------------------------------------------------
+8. Governing Law
+----------------------------------------------------------------------
+
+This license shall be governed by and construed in accordance with the
+laws of the applicable jurisdiction of the Dataset owners.
+
+----------------------------------------------------------------------
+9. Contact
+----------------------------------------------------------------------
+
+For commercial licensing, extended access, or clarification of usage
+rights, please contact:
+
+[kema@hksut-gz.edu.cn]
+[project website]
+
+----------------------------------------------------------------------
+End of License
+----------------------------------------------------------------------
