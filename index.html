@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAVE Dataset | Production Autonomous Vehicle Evaluation</title>
+  <meta
+    name="description"
+    content="PAVE is a real-world end-to-end dataset for production autonomous vehicle evaluation, released as a selected academic subset for non-commercial research."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-backdrop" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-top">
+        <a class="brand" href="#">
+          <span class="brand-mark">P</span>
+          <span class="brand-text">
+            <strong>PAVE Dataset</strong>
+            <small>KITE Lab Release</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#sensors">Sensors</a>
+          <a href="#access">Access</a>
+          <a href="#citation">Citation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Production Autonomous Vehicle Evaluation</p>
+          <h1>PAVE Dataset</h1>
+          <p class="lead">
+            A real-world end-to-end dataset designed for system-level evaluation
+            of driving safety and reliability beyond perception-only benchmarks.
+          </p>
+          <p class="hero-note">
+            The current release provides a selected academic subset collected
+            under identified autonomous driving mode with synchronized sensors
+            and high-precision localization.
+          </p>
+
+          <div class="cta-row">
+            <a
+              class="button primary"
+              href="https://arxiv.org/abs/2511.14185"
+              target="_blank"
+              rel="noreferrer"
+            >Read Paper</a>
+            <a
+              class="button secondary"
+              href="https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH"
+              target="_blank"
+              rel="noreferrer"
+            >Download Subset</a>
+            <a
+              class="button tertiary"
+              href="https://github.com/KITE-Lab/PAVE_Dataset"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub Repository</a>
+          </div>
+
+          <ul class="hero-tags" aria-label="Release attributes">
+            <li>Academic subset</li>
+            <li>Non-commercial use</li>
+            <li>Synchronized multi-sensor logs</li>
+            <li>High-precision localization</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel">
+          <p class="panel-label">Release Snapshot</p>
+          <h2>Built for evaluating autonomous driving as a system.</h2>
+          <div class="panel-grid">
+            <article>
+              <span>Collection</span>
+              <strong>Autonomous-mode road logs</strong>
+            </article>
+            <article>
+              <span>Modalities</span>
+              <strong>Images, videos, GNSS/IMU, calibration</strong>
+            </article>
+            <article>
+              <span>Use cases</span>
+              <strong>Behavior analysis, safety evaluation, benchmarking</strong>
+            </article>
+            <article>
+              <span>Access</span>
+              <strong>Academic release with formal citation requirement</strong>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Overview</p>
+          <h2>Why PAVE matters</h2>
+          <p>
+            Existing datasets such as KITTI, nuScenes, Waymo, Argoverse, and
+            SemanticKITTI mainly support perception tasks, while most are
+            collected from manually driven vehicles.
+          </p>
+          <p>
+            PAVE is designed to close that gap with real-world logs captured
+            under autonomous driving mode, enabling holistic evaluation of
+            intelligent driving behavior, safety events, and trajectory quality.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="comparison-card">
+            <h3>Common public driving datasets</h3>
+            <ul class="comparison-list">
+              <li>Strong on perception benchmarks</li>
+              <li>Often centered on manually driven data collection</li>
+              <li>Less suited for system-level AV evaluation</li>
+            </ul>
+          </article>
+
+          <article class="comparison-card accent-card">
+            <h3>PAVE dataset release</h3>
+            <ul class="comparison-list">
+              <li>Collected under identified autonomous driving mode</li>
+              <li>Jointly supports perception and trajectory analysis</li>
+              <li>Targets safety, behavior, and benchmark development</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="included-panel">
+          <div class="section-heading compact">
+            <p class="section-tag">What's Included</p>
+            <h3>Selected academic subset</h3>
+          </div>
+
+          <div class="included-grid">
+            <article class="info-card">
+              <span class="card-index">01</span>
+              <h4>Image Sequences</h4>
+              <p>Frame-level synchronized camera data for visual analysis and downstream benchmarking.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">02</span>
+              <h4>Video Streams</h4>
+              <p>Continuous recordings for short-sequence and long-session evaluation workflows.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">03</span>
+              <h4>GNSS / IMU Logs</h4>
+              <p>High-precision localization signals for trajectory reconstruction and temporal alignment.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">04</span>
+              <h4>Calibration Files</h4>
+              <p>Structured sensor metadata to support coordinate transforms and reproducible processing.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-index">05</span>
+              <h4>Safety-Oriented Labels</h4>
+              <p>Material for behavior analysis, scenario understanding, and evaluation benchmark design.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Highlights</p>
+          <h2>Research-oriented release design</h2>
+          <p>
+            The current release is organized to support non-commercial research,
+            method development, and scientific publication around autonomous
+            vehicle evaluation.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-index">01</span>
+            <h3>Autonomous-mode Collection</h3>
+            <p>Real-world driving logs collected with autonomous driving engaged rather than purely manual operation.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">02</span>
+            <h3>System-level Evaluation</h3>
+            <p>Supports safety and reliability analysis beyond isolated perception metrics.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">03</span>
+            <h3>Trajectory and Behavior Analysis</h3>
+            <p>Designed for AV behavior understanding, trajectory evaluation, and benchmark construction.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">04</span>
+            <h3>Multi-modal Synchronization</h3>
+            <p>Synchronized sensor streams and localization records make temporal alignment a first-class capability.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">05</span>
+            <h3>Privacy-aware Release</h3>
+            <p>Faces and license plates are anonymized in accordance with privacy and compliance requirements.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">06</span>
+            <h3>Benchmark-ready Packaging</h3>
+            <p>Suitable for academic evaluation, reproducible experiments, and future devkit expansion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sensors" class="section">
+      <div class="container sensors-layout">
+        <div class="section-heading">
+          <p class="section-tag">Sensor Setup</p>
+          <h2>Synchronized sensing with high-precision localization</h2>
+          <p>
+            PAVE combines front and side cameras with GI320 GNSS/IMU hardware
+            and GNSS NMEA plus PPS timing alignment to support consistent
+            cross-modal analysis.
+          </p>
+        </div>
+
+        <div class="sensor-grid">
+          <div class="media-frame">
+            <img src="docs/images/gi320.jpg" alt="GI320 GNSS and IMU hardware used in the dataset setup" />
+          </div>
+
+          <div class="sensor-cards">
+            <article class="sensor-card">
+              <h3>Front Cameras</h3>
+              <p>One wide-angle camera and one narrow-angle camera for complementary near-field and long-range observation.</p>
+              <ul>
+                <li>120° wide FOV</li>
+                <li>30° narrow FOV</li>
+                <li>2592 x 1944 at 30 FPS</li>
+              </ul>
+            </article>
+
+            <article class="sensor-card">
+              <h3>Side Cameras</h3>
+              <p>Left and right cameras extend lateral coverage for scenario understanding and synchronized playback.</p>
+              <ul>
+                <li>120° field of view</li>
+                <li>2592 x 1944 at 30 FPS</li>
+                <li>Aligned with front-view capture</li>
+              </ul>
+            </article>
+
+            <article class="sensor-card">
+              <h3>GI320 GNSS + IMU</h3>
+              <p>RTK-capable localization and inertial sensing provide the temporal and geometric backbone of the release.</p>
+              <ul>
+                <li>20 Hz GNSS</li>
+                <li>200 Hz IMU</li>
+                <li>RTK-level precision</li>
+              </ul>
+            </article>
+
+            <article class="sensor-card">
+              <h3>Time Synchronization</h3>
+              <p>GNSS NMEA messages and PPS are used to achieve sub-millisecond alignment across modalities.</p>
+              <ul>
+                <li>Shared reference clock</li>
+                <li>Cross-sensor temporal consistency</li>
+                <li>Reliable trajectory reconstruction</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Access</p>
+          <h2>Academic release, formal usage terms</h2>
+          <p>
+            This repository currently releases a selected academic subset for
+            non-commercial research, method development, and scientific
+            publication.
+          </p>
+        </div>
+
+        <div class="access-grid">
+          <article class="access-card access-card-primary">
+            <h3>Data Access</h3>
+            <p>Download the currently released academic subset and explore the repository documentation.</p>
+            <div class="stack-links">
+              <a
+                class="inline-link"
+                href="https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH"
+                target="_blank"
+                rel="noreferrer"
+              >Public academic subset</a>
+              <a
+                class="inline-link"
+                href="https://github.com/KITE-Lab/PAVE_Dataset"
+                target="_blank"
+                rel="noreferrer"
+              >Repository homepage</a>
+            </div>
+          </article>
+
+          <article class="access-card">
+            <h3>License Summary</h3>
+            <p>The release is governed by the PAVE Academic Non-Commercial License v1.0.</p>
+            <ul>
+              <li>Permitted: academic research, scientific investigation, non-commercial benchmarking, theses, and papers</li>
+              <li>Prohibited: commercial use, redistribution, resale, sublicensing, or proprietary deployment</li>
+              <li>Commercial use requires a separate licensing agreement</li>
+            </ul>
+            <a class="inline-link" href="License.txt">Read full license</a>
+          </article>
+
+          <article class="access-card">
+            <h3>Usage Conditions</h3>
+            <ul>
+              <li>Proper citation of the PAVE paper is mandatory</li>
+              <li>Dataset usage alone does not justify co-authorship</li>
+              <li>The release is provided as is, without warranty</li>
+              <li>Violation of license terms results in automatic termination</li>
+            </ul>
+          </article>
+
+          <article class="access-card">
+            <h3>Full Dataset & Licensing</h3>
+            <p>For full-dataset access, commercial licenses, industrial evaluation services, or extended annotations and benchmarks:</p>
+            <a class="inline-link" href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="section">
+      <div class="container citation-layout">
+        <div class="section-heading compact">
+          <p class="section-tag">Citation</p>
+          <h2>Please cite the dataset paper</h2>
+          <p>
+            Citation is a formal requirement for any research output that uses
+            this dataset, even partially.
+          </p>
+        </div>
+
+        <div class="citation-card">
+          <pre><code>@article{Li2025PAVE,
+  title   = {PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation},
+  author  = {Xiangyu Li and Chen Wang and Yumao Liu and Dengbo He and Jiahao Zhang and Ke Ma},
+  journal = {arXiv preprint arXiv:2511.14185},
+  year    = {2025}
+}</code></pre>
+          <a
+            class="inline-link"
+            href="https://arxiv.org/abs/2511.14185"
+            target="_blank"
+            rel="noreferrer"
+          >Open the paper on arXiv</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact-panel">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Dataset inquiries and licensing requests</h2>
+          <p>
+            Please reach out for full dataset access, licensing clarification,
+            extended benchmarks, or industry collaboration around autonomous
+            vehicle evaluation.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <p><strong>Email</strong></p>
+          <a href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
+          <p class="contact-note">KITE Lab, HKUST(GZ)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>PAVE Dataset</p>
+      <p>&copy; 2026 KITE Lab</p>
+    </div>
+  </footer>
+</body>
+</html>
