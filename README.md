@@ -21,6 +21,7 @@ This repository currently releases a **selected academic subset** of the PAVE da
 - **Public dataset link**: [Download the released academic subset](https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH)  
 
 ### Release Terms
+- This release is governed by the **PAVE Academic Non-Commercial License v1.0** in [License.txt](License.txt).  
 - Accessing or using this released subset means agreeing to the academic usage restrictions above.  
 - Proper citation of the PAVE dataset paper is **mandatory** for any research output using this dataset, even partially.  
 - Original PAVE authors should not be listed as co-authors solely due to dataset usage unless they contributed substantially to the research itself.  
@@ -29,8 +30,8 @@ This repository currently releases a **selected academic subset** of the PAVE da
 ### License and Usage Restrictions
 By accessing or using this dataset subset, you agree to the following:
 
-- **Permitted uses**: academic research, non-commercial evaluation and benchmarking, course projects, theses, dissertations, and scientific papers.  
-- **Prohibited uses**: any commercial or industrial use, including product development, internal performance benchmarking, deployment, distribution, resale, sharing of the released subset, or use in proprietary systems.  
+- **Permitted uses**: academic research, scientific investigation, method development, validation, non-commercial benchmarking, course projects, theses, dissertations, and scientific papers.  
+- **Prohibited uses**: any commercial or industrial use, including product development, internal performance benchmarking, deployment, consulting, contract research, paid services, redistribution, resale, sublicensing, sharing of the released subset, or use in proprietary / closed-source systems.  
 - **Commercial use**: requires a separate licensing agreement with the dataset maintainers.  
 
 ### Authorship, Disclaimer, and Ethical Use
@@ -38,8 +39,21 @@ By accessing or using this dataset subset, you agree to the following:
 - **Disclaimer**: the released subset is provided **"as is"** without warranty of any kind, and the maintainers assume no liability for outcomes arising from its use.  
 - **Ethical use**: users should uphold data privacy requirements, avoid misuse or misinterpretation, and maintain rigorous scientific and ethical standards.  
 
+### Additional Terms
+- **Binding citation requirement**: failure to properly cite the PAVE paper constitutes misuse of the dataset.  
+- **Termination**: this license terminates automatically if any of the stated conditions are violated; upon termination, all copies of the dataset must be deleted.  
+- **Governing law**: the license shall be governed by the applicable jurisdiction of the dataset owners.  
+
+### Full Dataset and Licensing
+- The public release is only a limited academic sample of the full PAVE dataset.  
+- For the **full dataset**, **commercial licenses**, **industrial evaluation services**, or **extended annotations / benchmarks**, please contact **kema@hkust-gz.edu.cn**.  
+- If your intended use case may be commercial, please contact the maintainers before proceeding.  
+
 ### Contact
 For access to the **full dataset**, **commercial licenses**, **industrial evaluation services**, or **extended annotations / benchmarks**, please contact **kema@hkust-gz.edu.cn**.
+
+### Acknowledgement
+We appreciate your interest in PAVE and encourage you to star the repository and include the required citation in any publication that uses this dataset.
 
 ---
 
