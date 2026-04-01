@@ -1,9 +1,45 @@
-# Autonomous Driving Evaluation Dataset
+# PAVE Dataset
 
-🚗 **First dataset collected from autonomous vehicles with intelligent driving mode engaged.**  
-Designed for **system-level evaluation of driving safety and reliability**, beyond traditional perception-only datasets.
+🚗 **PAVE is a real-world end-to-end dataset for production autonomous vehicle evaluation.**  
+It is designed for **system-level evaluation of driving safety and reliability**, beyond traditional perception-only datasets.
 
-Project Repository: [https://github.com/KITE-Lab/autonomous-driving-dataset](https://github.com/KITE-Lab/autonomous-driving-dataset)
+Project Repository: [https://github.com/KITE-Lab/PAVE_Dataset](https://github.com/KITE-Lab/PAVE_Dataset)  
+Paper: [PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation](https://arxiv.org/abs/2511.14185)
+Dataset Release: [Public Academic Subset Download](https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH)
+
+---
+
+## 📣 Dataset Release
+This repository currently releases a **selected academic subset** of the PAVE dataset for **non-commercial research, method development, and scientific publication**.
+
+- **Release scope**: partial segment of the full PAVE dataset.  
+- **Collection setting**: real-world driving logs collected under identified autonomous driving mode with synchronized sensors and high-precision localization.  
+- **Supported research**: AV behavior and safety analysis, trajectory evaluation, and benchmark development.  
+- **Permitted uses**: academic research, non-commercial evaluation, course projects, theses, dissertations, and scientific papers.  
+- **Prohibited uses**: product development, internal industrial benchmarking, deployment, resale, redistribution, or integration into proprietary/commercial systems.  
+- **Commercial access**: requires a separate licensing agreement.  
+- **Public dataset link**: [Download the released academic subset](https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH)  
+
+### Release Terms
+- Accessing or using this released subset means agreeing to the academic usage restrictions above.  
+- Proper citation of the PAVE dataset paper is **mandatory** for any research output using this dataset, even partially.  
+- Original PAVE authors should not be listed as co-authors solely due to dataset usage unless they contributed substantially to the research itself.  
+- The dataset is provided **"as is"**, without warranty of completeness, accuracy, or fitness for a particular purpose.  
+
+### License and Usage Restrictions
+By accessing or using this dataset subset, you agree to the following:
+
+- **Permitted uses**: academic research, non-commercial evaluation and benchmarking, course projects, theses, dissertations, and scientific papers.  
+- **Prohibited uses**: any commercial or industrial use, including product development, internal performance benchmarking, deployment, distribution, resale, sharing of the released subset, or use in proprietary systems.  
+- **Commercial use**: requires a separate licensing agreement with the dataset maintainers.  
+
+### Authorship, Disclaimer, and Ethical Use
+- **Authorship**: citing the dataset paper is required and sufficient for acknowledgment; dataset usage alone does not justify co-authorship.  
+- **Disclaimer**: the released subset is provided **"as is"** without warranty of any kind, and the maintainers assume no liability for outcomes arising from its use.  
+- **Ethical use**: users should uphold data privacy requirements, avoid misuse or misinterpretation, and maintain rigorous scientific and ethical standards.  
+
+### Contact
+For access to the **full dataset**, **commercial licenses**, **industrial evaluation services**, or **extended annotations / benchmarks**, please contact **kema@hkust-gz.edu.cn**.
 
 ---
 
@@ -92,6 +128,9 @@ We provide baseline models to showcase benchmark usage:
   - Visualization toolkit for synchronized playback.  
   - Conversion utilities (coordinate transforms).  
 - **Leaderboard (optional)**: submit benchmark results for comparison.  
+- **Current public release**: [academic subset download](https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH).  
+- **Repository homepage**: [https://github.com/KITE-Lab/PAVE_Dataset](https://github.com/KITE-Lab/PAVE_Dataset).  
+- **Full-dataset or commercial access**: contact **kema@hkust-gz.edu.cn**.  
 
 ---
 
@@ -119,9 +158,12 @@ We provide baseline models to showcase benchmark usage:
 If you use this dataset in your research, please cite:
 
 ```bibtex
-@dataset{kite2025autonomous,
-  title        = {Autonomous Driving Evaluation Dataset},
-  author       = {KITE Lab},
-  year         = {2025},
-  url          = {https://github.com/KITE-Lab/autonomous-driving-dataset}
+@article{Li2025PAVE,
+  title  = {PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation},
+  author = {Xiangyu Li and Chen Wang and Yumao Liu and Dengbo He and Jiahao Zhang and Ke Ma},
+  journal = {arXiv preprint arXiv:2511.14185},
+  year   = {2025}
 }
+```
+
+This citation is a formal requirement for any research, report, or publication that uses the released subset, even partially.
