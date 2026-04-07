@@ -31,6 +31,7 @@
 
         <nav class="nav" aria-label="Primary">
           <a href="#overview">Overview</a>
+          <a href="#scenarios">Scenarios</a>
           <a href="#highlights">Highlights</a>
           <a href="#sensors">Sensors</a>
           <a href="#access">Access</a>
@@ -82,26 +83,17 @@
           </ul>
         </div>
 
-        <aside class="hero-panel">
-          <p class="panel-label">Release Snapshot</p>
-          <h2>Built for evaluating autonomous driving as a system.</h2>
-          <div class="panel-grid">
-            <article>
-              <span>Collection</span>
-              <strong>Autonomous-mode road logs</strong>
-            </article>
-            <article>
-              <span>Modalities</span>
-              <strong>Images, videos, GNSS/IMU, calibration</strong>
-            </article>
-            <article>
-              <span>Use cases</span>
-              <strong>Behavior analysis, safety evaluation, benchmarking</strong>
-            </article>
-            <article>
-              <span>Access</span>
-              <strong>Academic release with formal citation requirement</strong>
-            </article>
+        <aside class="hero-panel hero-showcase">
+          <div class="hero-visual-copy">
+            <p class="panel-label">Instrumented Fleet Vehicles</p>
+            <h2>Instrumented production vehicles used for real-world autonomous-driving data collection.</h2>
+          </div>
+
+          <div class="hero-image-frame">
+            <img
+              src="docs/images/七张.png"
+              alt="A collage of instrumented production vehicles used in PAVE data collection across outdoor roads and indoor parking environments."
+            />
           </div>
         </aside>
       </div>
@@ -183,6 +175,28 @@
       </div>
     </section>
 
+    <section id="scenarios" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Scenario Diversity</p>
+          <h2>Representative scenes across road types, weather, and traffic density</h2>
+          <p>
+            The PAVE paper highlights broad real-world coverage spanning
+            highway, urban, and residential roads, together with day and night
+            conditions, rain, and varying traffic density for behavior and
+            safety evaluation.
+          </p>
+        </div>
+
+        <figure class="paper-figure figure-panel">
+          <img
+            src="docs/images/figure2_scenarios.png.png"
+            alt="Representative PAVE scenes across highway, urban, residential, clear, rain, day, night, high-density, and low-density conditions."
+          />
+        </figure>
+      </div>
+    </section>
+
     <section id="highlights" class="section alt">
       <div class="container">
         <div class="section-heading">
@@ -236,10 +250,34 @@
           <p class="section-tag">Sensor Setup</p>
           <h2>Synchronized sensing with high-precision localization</h2>
           <p>
-            PAVE combines front and side cameras with GI320 GNSS/IMU hardware
-            and GNSS NMEA plus PPS timing alignment to support consistent
-            cross-modal analysis.
+            According to the paper, PAVE is built on a fixed multi-sensor
+            platform with four high-resolution RGB cameras and a high-precision
+            GNSS/IMU unit, enabling synchronized perception and trajectory
+            capture in real autonomous-driving operation.
           </p>
+        </div>
+
+        <div class="sensor-spec-strip" aria-label="Sensor specification summary">
+          <article class="sensor-spec-card">
+            <span>Camera Suite</span>
+            <strong>4 RGB cameras</strong>
+            <p>Front-wide, front-telephoto, left-wide, and right-wide.</p>
+          </article>
+          <article class="sensor-spec-card">
+            <span>Image Quality</span>
+            <strong>2592 x 1944 @ 30 FPS</strong>
+            <p>All cameras follow the same high-resolution recording setup.</p>
+          </article>
+          <article class="sensor-spec-card">
+            <span>Localization</span>
+            <strong>20 Hz GNSS + 200 Hz IMU</strong>
+            <p>GNSS is further enhanced by RTK differential correction via CORS.</p>
+          </article>
+          <article class="sensor-spec-card">
+            <span>Accuracy</span>
+            <strong>~0.8 cm</strong>
+            <p>Paper-reported localization accuracy for trajectory alignment.</p>
+          </article>
         </div>
 
         <div class="sensor-grid">
@@ -249,8 +287,9 @@
 
           <div class="sensor-cards">
             <article class="sensor-card">
-              <h3>Front Cameras</h3>
-              <p>One wide-angle camera and one narrow-angle camera for complementary near-field and long-range observation.</p>
+              <h3>Front RGB Cameras</h3>
+              <p>The forward-view setup combines a front-wide camera for broad scene coverage and a front-telephoto camera for longer-range observation.</p>
+              <p class="sensor-metrics">120° front-wide FOV, 30° front-telephoto FOV, and 2592 x 1944 capture at 30 FPS.</p>
               <ul>
                 <li>120° wide FOV</li>
                 <li>30° narrow FOV</li>
@@ -259,8 +298,9 @@
             </article>
 
             <article class="sensor-card">
-              <h3>Side Cameras</h3>
-              <p>Left and right cameras extend lateral coverage for scenario understanding and synchronized playback.</p>
+              <h3>Side-wide Cameras</h3>
+              <p>Left and right side cameras expand lateral coverage so the dataset can better capture surrounding traffic and road context.</p>
+              <p class="sensor-metrics">Both side-wide cameras use 120° FOV and record at 2592 x 1944 resolution and 30 FPS.</p>
               <ul>
                 <li>120° field of view</li>
                 <li>2592 x 1944 at 30 FPS</li>
@@ -269,8 +309,9 @@
             </article>
 
             <article class="sensor-card">
-              <h3>GI320 GNSS + IMU</h3>
-              <p>RTK-capable localization and inertial sensing provide the temporal and geometric backbone of the release.</p>
+              <h3>GNSS / IMU Module</h3>
+              <p>The localization stack fuses GNSS and IMU measurements, while RTK differential correction through the CORS network improves position accuracy.</p>
+              <p class="sensor-metrics">The paper reports 20 Hz GNSS, 200 Hz IMU, and approximately 0.8 cm localization accuracy.</p>
               <ul>
                 <li>20 Hz GNSS</li>
                 <li>200 Hz IMU</li>
@@ -279,8 +320,9 @@
             </article>
 
             <article class="sensor-card">
-              <h3>Time Synchronization</h3>
-              <p>GNSS NMEA messages and PPS are used to achieve sub-millisecond alignment across modalities.</p>
+              <h3>Synchronization & Output</h3>
+              <p>GNSS time acts as the global temporal reference so that video streams and trajectory states stay aligned across the whole system.</p>
+              <p class="sensor-metrics">Logged states include latitude, longitude, altitude, velocity, heading, roll, pitch, and yaw.</p>
               <ul>
                 <li>Shared reference clock</li>
                 <li>Cross-sensor temporal consistency</li>
@@ -289,6 +331,13 @@
             </article>
           </div>
         </div>
+
+        <figure class="paper-figure figure-panel">
+          <img
+            src="docs/images/figure1_sensor_setup.png"
+            alt="Top-view sensor setup of the PAVE vehicle showing camera fields of view and GNSS and IMU placement."
+          />
+        </figure>
       </div>
     </section>
 
