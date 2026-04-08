@@ -76,17 +76,19 @@
           </div>
 
           <ul class="hero-tags" aria-label="Release attributes">
-            <li>Academic subset</li>
-            <li>Non-commercial use</li>
-            <li>Synchronized multi-sensor logs</li>
-            <li>High-precision localization</li>
+            <li>Autonomous Driving</li>
+            <li>Autonomous Vehicles</li>
+            <li>End-to-End</li>
+            <li>Multi-Sensor</li>
+            <li>Real-World Data</li>
+            <li>High-Precision Localization</li>
           </ul>
         </div>
 
         <aside class="hero-panel hero-showcase">
           <div class="hero-visual-copy">
-            <p class="panel-label">Instrumented Fleet Vehicles</p>
-            <h2>Instrumented production vehicles used for real-world autonomous-driving data collection.</h2>
+            <p class="panel-label">TEST VEHICLES</p>
+            <h2>Test vehicles used for real-world autonomous-driving data collection.</h2>
           </div>
 
           <div class="hero-image-frame">
@@ -107,9 +109,9 @@
           <p class="section-tag">Overview</p>
           <h2>Why PAVE matters</h2>
           <p>
-            Existing datasets such as KITTI, nuScenes, Waymo, Argoverse, and
-            SemanticKITTI mainly support perception tasks, while most are
-            collected from manually driven vehicles.
+            Existing datasets such as KITTI, nuScenes, Waymo, Argoverse,
+            nuPlan, and Zenseact Open Dataset (ZOD) mainly support perception
+            tasks, while most are collected from manually driven vehicles.
           </p>
           <p>
             PAVE is designed to close that gap with real-world logs captured
@@ -118,57 +120,147 @@
           </p>
         </div>
 
-        <div class="overview-grid">
-          <article class="comparison-card">
-            <h3>Common public driving datasets</h3>
-            <ul class="comparison-list">
-              <li>Strong on perception benchmarks</li>
-              <li>Often centered on manually driven data collection</li>
-              <li>Less suited for system-level AV evaluation</li>
-            </ul>
-          </article>
+        <div class="section-heading compact">
+          <p class="section-tag">Comparison</p>
+          <h3>Dataset Comparison</h3>
+        </div>
 
-          <article class="comparison-card accent-card">
-            <h3>PAVE dataset release</h3>
-            <ul class="comparison-list">
-              <li>Collected under identified autonomous driving mode</li>
-              <li>Jointly supports perception and trajectory analysis</li>
-              <li>Targets safety, behavior, and benchmark development</li>
-            </ul>
-          </article>
+        <div class="dataset-table-shell">
+          <div
+            class="dataset-table-wrap"
+            role="region"
+            aria-label="Dataset comparison table"
+            tabindex="0"
+          >
+            <table class="dataset-table">
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Dataset</th>
+                  <th scope="col">Year</th>
+                  <th scope="col">Driving Mode</th>
+                  <th scope="col">Data Type</th>
+                  <th scope="col">Cameras</th>
+                  <th scope="col">Localization Accuracy</th>
+                  <th scope="col">Tasks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Perception</td>
+                  <td>KITTI</td>
+                  <td>2012</td>
+                  <td>Human</td>
+                  <td>Image</td>
+                  <td>4</td>
+                  <td>High-precision GPS/IMU</td>
+                  <td>Detection, Tracking</td>
+                </tr>
+                <tr>
+                  <td>Perception</td>
+                  <td>ZOD (Frame)</td>
+                  <td>2023</td>
+                  <td>Human</td>
+                  <td>Image</td>
+                  <td>1</td>
+                  <td>1 cm GNSS/IMU</td>
+                  <td>Detection</td>
+                </tr>
+                <tr>
+                  <td>Perception</td>
+                  <td>Waymo Perception</td>
+                  <td>2020</td>
+                  <td>H + A unlabeled</td>
+                  <td>Image</td>
+                  <td>5</td>
+                  <td>Vehicle pose provided</td>
+                  <td>Detection, Tracking</td>
+                </tr>
+                <tr>
+                  <td>Motion</td>
+                  <td>Waymo Motion</td>
+                  <td>2021</td>
+                  <td>H + A unlabeled</td>
+                  <td>Trajectory</td>
+                  <td>8</td>
+                  <td>Map-aligned tracks</td>
+                  <td>Motion</td>
+                </tr>
+                <tr>
+                  <td>Perception</td>
+                  <td>nuScenes</td>
+                  <td>2020</td>
+                  <td>Human</td>
+                  <td>Both</td>
+                  <td>6</td>
+                  <td>Ego pose provided</td>
+                  <td>Detection, Tracking, Motion</td>
+                </tr>
+                <tr>
+                  <td>Motion</td>
+                  <td>ZOD (Sequences)</td>
+                  <td>2023</td>
+                  <td>Human</td>
+                  <td>Both</td>
+                  <td>1</td>
+                  <td>1 cm GNSS/IMU</td>
+                  <td>Detection, Motion</td>
+                </tr>
+                <tr>
+                  <td>End-to-End</td>
+                  <td>Waymo E2E</td>
+                  <td>2025</td>
+                  <td>H + A unlabeled</td>
+                  <td>Both</td>
+                  <td>8</td>
+                  <td>Ego states provided</td>
+                  <td>Planning, Evaluation</td>
+                </tr>
+                <tr class="pave-row">
+                  <td>End-to-End</td>
+                  <td>PAVE</td>
+                  <td>2025</td>
+                  <td>Autonomous</td>
+                  <td>Both</td>
+                  <td>4</td>
+                  <td>0.8 cm GNSS/IMU</td>
+                  <td>Detection, Motion, Planning, Evaluation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="dataset-note">
+            H + A (labeled): human and autonomous driving modes are explicitly identified.
+          </p>
         </div>
 
         <div class="included-panel">
           <div class="section-heading compact">
             <p class="section-tag">What's Included</p>
-            <h3>Selected academic subset</h3>
+            <h3>Released Dataset Components</h3>
           </div>
 
           <div class="included-grid">
             <article class="info-card">
               <span class="card-index">01</span>
-              <h4>Image Sequences</h4>
-              <p>Frame-level synchronized camera data for visual analysis and downstream benchmarking.</p>
+              <h4>Image Data</h4>
+              <p>Synchronized multi-view images from four cameras for perception and scene understanding.</p>
             </article>
             <article class="info-card">
               <span class="card-index">02</span>
-              <h4>Video Streams</h4>
-              <p>Continuous recordings for short-sequence and long-session evaluation workflows.</p>
+              <h4>GNSS / IMU Trajectories</h4>
+              <p>High-precision vehicle trajectories for motion analysis and planning evaluation.</p>
             </article>
             <article class="info-card">
               <span class="card-index">03</span>
-              <h4>GNSS / IMU Logs</h4>
-              <p>High-precision localization signals for trajectory reconstruction and temporal alignment.</p>
+              <h4>Raw Video Data (Not Public)</h4>
+              <p>Continuous multi-camera video recordings are available internally but are not included in the public release.</p>
             </article>
             <article class="info-card">
               <span class="card-index">04</span>
-              <h4>Calibration Files</h4>
-              <p>Structured sensor metadata to support coordinate transforms and reproducible processing.</p>
-            </article>
-            <article class="info-card">
-              <span class="card-index">05</span>
-              <h4>Safety-Oriented Labels</h4>
-              <p>Material for behavior analysis, scenario understanding, and evaluation benchmark design.</p>
+              <h4>Scenario Labels</h4>
+              <p>Rich scenario-level annotations including road type, traffic conditions, lighting, and environmental attributes.</p>
             </article>
           </div>
         </div>
@@ -281,10 +373,6 @@
         </div>
 
         <div class="sensor-grid">
-          <div class="media-frame">
-            <img src="docs/images/gi320.jpg" alt="GI320 GNSS and IMU hardware used in the dataset setup" />
-          </div>
-
           <div class="sensor-cards">
             <article class="sensor-card">
               <h3>Front RGB Cameras</h3>

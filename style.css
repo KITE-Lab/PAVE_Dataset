@@ -286,7 +286,6 @@ code {
 .included-panel,
 .info-card,
 .feature-card,
-.media-frame,
 .sensor-card,
 .figure-panel,
 .access-card,
@@ -479,6 +478,75 @@ code {
     linear-gradient(180deg, rgba(216, 236, 233, 0.88), rgba(255, 250, 243, 0.82));
 }
 
+.dataset-table-shell {
+  display: grid;
+  gap: 0.95rem;
+  width: 100%;
+  margin: 1.4rem auto 0;
+}
+
+.dataset-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 243, 0.96), rgba(245, 241, 233, 0.88)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.dataset-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+}
+
+.dataset-table th,
+.dataset-table td {
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid rgba(24, 32, 42, 0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+.dataset-table th {
+  font-family: "Sora", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: rgba(216, 236, 233, 0.42);
+  white-space: nowrap;
+}
+
+.dataset-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.dataset-table tbody tr:hover {
+  background: rgba(30, 95, 90, 0.08);
+}
+
+.dataset-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dataset-table .pave-row {
+  background:
+    linear-gradient(90deg, rgba(30, 95, 90, 0.16), rgba(180, 86, 45, 0.08));
+}
+
+.dataset-table .pave-row td {
+  font-weight: 700;
+}
+
+.dataset-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .included-panel {
   padding: 1.55rem;
 }
@@ -486,6 +554,13 @@ code {
 .included-grid,
 .feature-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.included-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .info-card,
@@ -558,27 +633,16 @@ code {
 }
 
 .sensor-grid {
-  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.35fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
-}
-
-.media-frame {
-  overflow: hidden;
-  min-height: 100%;
-  padding: 0;
-}
-
-.media-frame img {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  object-fit: cover;
 }
 
 .sensor-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.4rem;
+  width: min(100%, 920px);
+  margin: 0 auto;
 }
 
 .sensor-metrics {
@@ -597,7 +661,7 @@ code {
 
 .paper-figure {
   margin: 1.75rem auto 0;
-  width: min(100%, 1020px);
+  width: 100%;
   text-align: center;
   background:
     linear-gradient(180deg, rgba(255, 250, 243, 0.96), rgba(245, 241, 233, 0.88)),
@@ -776,5 +840,10 @@ code {
 
   .button {
     width: 100%;
+  }
+
+  .dataset-table th,
+  .dataset-table td {
+    padding: 0.9rem 0.95rem;
   }
 }
