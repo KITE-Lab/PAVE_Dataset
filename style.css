@@ -460,8 +460,8 @@ code {
 }
 
 .comparison-card h3 {
-  margin: 0 0 0.85rem;
-  font-size: 1.2rem;
+  margin: 0.35rem 0 0;
+  font-size: 1.65rem;
 }
 
 .comparison-list {
@@ -478,73 +478,32 @@ code {
     linear-gradient(180deg, rgba(216, 236, 233, 0.88), rgba(255, 250, 243, 0.82));
 }
 
-.dataset-table-shell {
-  display: grid;
-  gap: 0.95rem;
-  width: 100%;
+.comparison-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: none;
   margin: 1.4rem auto 0;
 }
 
-.dataset-table-wrap {
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(180deg, rgba(255, 250, 243, 0.96), rgba(245, 241, 233, 0.88)),
-    var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.dataset-table {
+.comparison-card img {
   width: 100%;
-  min-width: 980px;
-  border-collapse: collapse;
-  font-size: 0.96rem;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
-.dataset-table th,
-.dataset-table td {
-  padding: 1rem 1.1rem;
-  border-bottom: 1px solid rgba(24, 32, 42, 0.08);
-  text-align: left;
-  vertical-align: top;
+.comparison-card .section-heading.compact {
+  max-width: 100%;
 }
 
-.dataset-table th {
-  font-family: "Sora", sans-serif;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--teal);
-  background: rgba(216, 236, 233, 0.42);
-  white-space: nowrap;
-}
-
-.dataset-table tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.34);
-}
-
-.dataset-table tbody tr:hover {
-  background: rgba(30, 95, 90, 0.08);
-}
-
-.dataset-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.dataset-table .pave-row {
-  background:
-    linear-gradient(90deg, rgba(30, 95, 90, 0.16), rgba(180, 86, 45, 0.08));
-}
-
-.dataset-table .pave-row td {
-  font-weight: 700;
-}
-
-.dataset-note {
-  margin: 0;
+.comparison-description {
+  margin: 0.85rem 0 1.25rem;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.96rem;
+  line-height: 1.65;
 }
 
 .included-panel {
@@ -842,8 +801,4 @@ code {
     width: 100%;
   }
 
-  .dataset-table th,
-  .dataset-table td {
-    padding: 0.9rem 0.95rem;
-  }
 }
