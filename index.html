@@ -22,9 +22,11 @@
     <div class="container">
       <div class="hero-top">
         <a class="brand" href="#">
-          <span class="brand-mark">P</span>
           <span class="brand-text">
-            <strong>PAVE Dataset</strong>
+            <span class="header-title">
+              <img src="docs/images/kite lab.png" class="lab-logo" alt="KITE Lab Logo" />
+              <span>PAVE Dataset</span>
+            </span>
             <small>KITE Lab Release</small>
           </span>
         </a>
@@ -168,21 +170,98 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-tag">Scenario Diversity</p>
-          <h2>Representative scenes across road types, weather, and traffic density</h2>
+          <h2>Scenario Coverage and Structured Annotation Schema</h2>
           <p>
-            The PAVE paper highlights broad real-world coverage spanning
-            highway, urban, and residential roads, together with day and night
-            conditions, rain, and varying traffic density for behavior and
-            safety evaluation.
+            The PAVE dataset provides diverse real-world driving scenarios
+            together with structured scenario-level annotations to support
+            systematic condition-aware analysis, subset construction, and
+            reproducible benchmark evaluation.
           </p>
         </div>
 
-        <figure class="paper-figure figure-panel">
+        <figure class="paper-figure figure-panel scenario-figure">
           <img
             src="docs/images/figure2_scenarios.png.png"
             alt="Representative PAVE scenes across highway, urban, residential, clear, rain, day, night, high-density, and low-density conditions."
           />
         </figure>
+
+        <div class="scenario-annotation-block">
+          <div class="section-heading compact">
+            <p class="section-tag">Scenario Annotation</p>
+            <h3>Structured schema for scenario-level analysis</h3>
+          </div>
+
+          <div class="annotation-grid">
+            <article class="info-card">
+              <span class="card-index">01</span>
+              <h4>Area Type</h4>
+              <p><strong>Allowed values</strong> [highway, urban, residential, rural, parking, other]</p>
+              <ul>
+                <li><strong>highway</strong>: highways, urban expressways, elevated roads, ramps, toll stations, and other high-speed road segments</li>
+                <li><strong>urban</strong>: city roads including arterial, secondary, and local streets with dense intersections and roadside buildings</li>
+                <li><strong>residential</strong>: internal roads within residential areas, campuses, or industrial parks</li>
+                <li><strong>rural</strong>: rural or suburban roads, including non-urban segments of national or provincial roads</li>
+                <li><strong>parking</strong>: parking lots, underground garages, or designated parking areas</li>
+                <li><strong>other</strong>: scenarios that cannot be clearly categorized into the above types</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="card-index">02</span>
+              <h4>Lighting</h4>
+              <p><strong>Allowed values</strong> [day, dusk, dawn, night, night_lit, night_unlit, other]</p>
+              <ul>
+                <li><strong>day</strong>: daytime with sufficient natural light, including overcast daytime conditions</li>
+                <li><strong>dusk</strong>: evening period around sunset with declining ambient illumination</li>
+                <li><strong>dawn</strong>: early morning period with low natural light before full daylight</li>
+                <li><strong>night</strong>: general nighttime conditions when illumination detail is not further distinguished</li>
+                <li><strong>night_lit</strong>: nighttime with clear street lighting or other artificial illumination</li>
+                <li><strong>night_unlit</strong>: nighttime with little or no artificial roadside lighting</li>
+                <li><strong>other</strong>: unclear or special lighting conditions outside the standard categories</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="card-index">03</span>
+              <h4>Weather</h4>
+              <p><strong>Allowed values</strong> [clear, cloudy, rain, snow, fog, other]</p>
+              <ul>
+                <li><strong>clear</strong>: sunny or stable conditions without precipitation</li>
+                <li><strong>cloudy</strong>: overcast conditions with reduced direct sunlight</li>
+                <li><strong>rain</strong>: active rainfall or post-rain conditions with visible wet-road effects</li>
+                <li><strong>snow</strong>: snowfall or snow-covered road environments</li>
+                <li><strong>fog</strong>: fog, haze, or reduced-visibility atmospheric conditions</li>
+                <li><strong>other</strong>: unclear or special weather conditions not covered above</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="card-index">04</span>
+              <h4>Road Surface</h4>
+              <p><strong>Allowed values</strong> [paved, unpaved, other]</p>
+              <ul>
+                <li><strong>paved</strong>: asphalt or concrete roads with regular on-road driving characteristics</li>
+                <li><strong>unpaved</strong>: dirt roads, gravel roads, or temporary construction paths with unsealed surfaces</li>
+                <li><strong>other</strong>: mixed or unclear surface types that cannot be reliably assigned</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="card-index">05</span>
+              <h4>Driving State</h4>
+              <p><strong>Allowed values</strong> [stop, follow, cruise, lane_change, turn, other]</p>
+              <ul>
+                <li><strong>stop</strong>: the vehicle is stationary or nearly stationary, for example at a traffic light or stop line</li>
+                <li><strong>follow</strong>: the vehicle is closely following a leading vehicle in the same lane</li>
+                <li><strong>cruise</strong>: the vehicle maintains lane and speed without close leading-vehicle interaction</li>
+                <li><strong>lane_change</strong>: the vehicle is actively changing lanes or crossing lane boundaries</li>
+                <li><strong>turn</strong>: the vehicle is executing a turn or traversing a sustained curved path</li>
+                <li><strong>other</strong>: insufficient visual evidence or behaviors not covered by the standard states</li>
+              </ul>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -250,7 +329,7 @@
           <article class="sensor-spec-card">
             <span>Camera Suite</span>
             <strong>4 RGB cameras</strong>
-            <p>Front-wide, front-telephoto, left-wide, and right-wide.</p>
+            <p>Front-wide (120°), front-tele (30°), left-wide (120°), and right-wide (120°).</p>
           </article>
           <article class="sensor-spec-card">
             <span>Image Quality</span>
@@ -317,12 +396,23 @@
           </div>
         </div>
 
-        <figure class="paper-figure figure-panel">
-          <img
-            src="docs/images/figure1_sensor_setup.png"
-            alt="Top-view sensor setup of the PAVE vehicle showing camera fields of view and GNSS and IMU placement."
-          />
-        </figure>
+        <div class="sensor-setup-gallery">
+          <figure class="paper-figure figure-panel sensor-setup-figure">
+            <img
+              src="docs/images/figure1_sensor_setup.png"
+              alt="Top-view sensor setup of the PAVE vehicle showing camera fields of view and GNSS and IMU placement."
+            />
+            <figcaption class="sensor-setup-caption">Early Platform Design</figcaption>
+          </figure>
+
+          <figure class="paper-figure figure-panel sensor-setup-figure">
+            <img
+              src="docs/images/SensorSetup.png"
+              alt="Current sensor mounting design for the PAVE vehicle."
+            />
+            <figcaption class="sensor-setup-caption">Current Platform Design</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 

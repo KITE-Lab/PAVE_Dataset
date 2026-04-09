@@ -98,9 +98,7 @@ code {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.9rem;
+  display: inline-block;
 }
 
 .brand-mark {
@@ -120,7 +118,20 @@ code {
   gap: 0.15rem;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lab-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 .brand-text strong,
+.header-title span,
 .nav a,
 .button,
 .section-heading h2,
@@ -136,6 +147,11 @@ code {
 
 .brand-text strong {
   font-size: 0.96rem;
+}
+
+.header-title span {
+  font-size: 0.96rem;
+  font-weight: 700;
 }
 
 .brand-text small {
@@ -522,6 +538,40 @@ code {
   margin: 0 auto;
 }
 
+.scenario-figure {
+  margin-top: 1.75rem;
+}
+
+.scenario-annotation-block {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.75rem auto 0;
+}
+
+.scenario-annotation-block .section-heading.compact {
+  margin-bottom: 1rem;
+}
+
+.annotation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.annotation-grid .info-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.3rem;
+  border-radius: var(--radius-lg);
+}
+
 .info-card,
 .feature-card {
   padding: 1.3rem;
@@ -633,6 +683,30 @@ code {
   margin: 0 auto;
   border-radius: var(--radius-md);
   object-fit: contain;
+}
+
+.sensor-setup-gallery {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.75rem;
+}
+
+.sensor-setup-figure {
+  margin: 0 auto;
+}
+
+.sensor-setup-figure img {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.sensor-setup-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #6f7a86;
+  text-align: center;
 }
 
 .sensor-card ul,
@@ -801,4 +875,16 @@ code {
     width: 100%;
   }
 
+}
+
+@media (min-width: 1100px) {
+  .annotation-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .annotation-grid {
+    grid-template-columns: 1fr;
+  }
 }
