@@ -125,7 +125,7 @@ code {
 }
 
 .lab-logo {
-  height: 40px;
+  height: 42px;
   width: auto;
   object-fit: contain;
 }
@@ -689,6 +689,28 @@ code {
   display: grid;
   gap: 2rem;
   margin-top: 1.75rem;
+}
+
+.sensor-visual-block {
+  margin-top: 40px;
+}
+
+.sensor-visual-block h3 {
+  margin: 0 0 10px;
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+}
+
+.sensor-visual-block p {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.sensor-visual-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .sensor-setup-figure {
