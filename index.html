@@ -128,10 +128,194 @@
             <h3>Dataset Comparison</h3>
             <p class="comparison-description">This table compares representative autonomous driving datasets across perception, motion, and end-to-end categories. Notably, PAVE uniquely provides explicitly labeled autonomous driving mode data, enabling direct analysis of real-world AV behavior.</p>
           </div>
-          <img
-            src="docs/images/23eba074d6d37094bc3f01c157fd2a0c.png"
-            alt="Dataset comparison"
-          />
+          <div class="comparison-table-wrap" role="region" aria-label="Dataset comparison table" tabindex="0">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th rowspan="2" scope="col">Category</th>
+                  <th rowspan="2" scope="col">Dataset</th>
+                  <th colspan="7" scope="colgroup">General</th>
+                  <th colspan="3" scope="colgroup">Perception</th>
+                  <th colspan="2" scope="colgroup">Trajectory</th>
+                  <th colspan="2" scope="colgroup">Tasks</th>
+                </tr>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Scenes</th>
+                  <th scope="col">Size (h)</th>
+                  <th scope="col">Veh. models</th>
+                  <th scope="col">Driving mode</th>
+                  <th scope="col">Locations</th>
+                  <th scope="col">Avg. speed</th>
+                  <th scope="col">RGB imgs</th>
+                  <th scope="col">Ann. frames</th>
+                  <th scope="col">Cams</th>
+                  <th scope="col">Accuracy</th>
+                  <th scope="col">Attitude</th>
+                  <th scope="col">Ann. scenarios</th>
+                  <th scope="col">Tasks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="3" scope="rowgroup">Perception</th>
+                  <th scope="row">KITTI</th>
+                  <td>2012</td>
+                  <td>22</td>
+                  <td>1.5</td>
+                  <td>1</td>
+                  <td>Human</td>
+                  <td>Karlsruhe</td>
+                  <td>9.7</td>
+                  <td>15k</td>
+                  <td>15k</td>
+                  <td>4</td>
+                  <td>0.02 m</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Det.&amp;Track.</td>
+                </tr>
+                <tr>
+                  <th scope="row">ZOD (Frame)</th>
+                  <td>2023</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>14x Europe</td>
+                  <td>&ndash;</td>
+                  <td>100k</td>
+                  <td>100k</td>
+                  <td>1</td>
+                  <td>0.01 m</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Det., Seg.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Waymo Perception</th>
+                  <td>2019</td>
+                  <td>1k</td>
+                  <td>5.5</td>
+                  <td>2</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>3x USA</td>
+                  <td>9.76</td>
+                  <td>1M</td>
+                  <td>200k</td>
+                  <td>5</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>No</td>
+                  <td>Det.&amp;Track.</td>
+                </tr>
+                <tr>
+                  <th rowspan="2" scope="rowgroup">Motion</th>
+                  <th scope="row">Waymo Motion</th>
+                  <td>2021</td>
+                  <td>100k</td>
+                  <td>570</td>
+                  <td>2</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>6x USA</td>
+                  <td>8.3</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>No</td>
+                  <td>Motion Pred.</td>
+                </tr>
+                <tr>
+                  <th scope="row">OpenPAV</th>
+                  <td>2024</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>Multi</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>Multi-source</td>
+                  <td>3.2-32.2</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>0.01 - 0.1 m</td>
+                  <td>&ndash;</td>
+                  <td>No</td>
+                  <td>Motion Pred.</td>
+                </tr>
+                <tr>
+                  <th rowspan="4" scope="rowgroup">End-to-End</th>
+                  <th scope="row">nuScenes</th>
+                  <td>2019</td>
+                  <td>1k</td>
+                  <td>5.5</td>
+                  <td>2</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>Boston, SG</td>
+                  <td>5.1</td>
+                  <td>1.4M</td>
+                  <td>40k</td>
+                  <td>6</td>
+                  <td>&le; 0.1 m</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Det.&amp;Track.</td>
+                </tr>
+                <tr>
+                  <th scope="row">ZOD (Sequences)</th>
+                  <td>2023</td>
+                  <td>1473</td>
+                  <td>~8</td>
+                  <td>&ndash;</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>14x Europe</td>
+                  <td>&ndash;</td>
+                  <td>294k</td>
+                  <td>1473</td>
+                  <td>1</td>
+                  <td>0.01 m</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Det., Seg.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Waymo E2E</th>
+                  <td>2025</td>
+                  <td>4021</td>
+                  <td>~12</td>
+                  <td>2</td>
+                  <td>H + A (unlabeled)</td>
+                  <td>USA</td>
+                  <td>5.8</td>
+                  <td>~5.5M</td>
+                  <td>&ndash;</td>
+                  <td>8</td>
+                  <td>&ndash;</td>
+                  <td>&ndash;</td>
+                  <td>No</td>
+                  <td>Motion Plan.</td>
+                </tr>
+                <tr class="comparison-table__featured">
+                  <th scope="row">PAVE</th>
+                  <td><strong>2025</strong></td>
+                  <td><strong>32727</strong></td>
+                  <td><strong>140</strong></td>
+                  <td><strong>5</strong></td>
+                  <td><strong>H + A (labeled)</strong></td>
+                  <td><strong>7 major cities in China and USA</strong></td>
+                  <td><strong>9.9</strong></td>
+                  <td><strong>130k</strong></td>
+                  <td><strong>130k</strong></td>
+                  <td><strong>4</strong></td>
+                  <td><strong>0.008 m</strong></td>
+                  <td><strong>Yes</strong></td>
+                  <td><strong>Yes</strong></td>
+                  <td><strong>Det., Eval. Motion Plan.</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div class="included-panel">
@@ -181,8 +365,8 @@
 
         <figure class="paper-figure figure-panel scenario-figure">
           <img
-            src="docs/images/figure2_scenarios.png.png"
-            alt="Representative PAVE scenes across highway, urban, residential, clear, rain, day, night, high-density, and low-density conditions."
+            src="docs/images/figure7_style.png"
+            alt="Representative PAVE multi-view images with object annotations and scene labels."
           />
         </figure>
 
@@ -394,19 +578,6 @@
               </ul>
             </article>
           </div>
-        </div>
-
-        <div class="sensor-visual-block">
-          <h3>Multi-View Camera Data Example</h3>
-          <p>
-            Example of synchronized multi-camera data with object annotations and scene labels,
-            illustrating real-world driving conditions captured in the PAVE dataset.
-          </p>
-          <img
-            src="docs/images/figure7_style.png"
-            alt="Multi-view annotated driving data"
-            class="sensor-visual-image"
-          />
         </div>
 
         <div class="sensor-setup-gallery">
