@@ -11,123 +11,142 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-backdrop" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero-top">
-        <a class="brand" href="#">
-          <span class="brand-text">
-            <span class="header-title">
-              <img src="docs/images/kite_lab2.jpg" class="lab-logo" alt="KITE Lab Logo" />
-              <span>PAVE Dataset</span>
-            </span>
-            <small>KITE Lab Release</small>
-          </span>
-        </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="PAVE Dataset home">
+        <img src="docs/images/kite_lab2.jpg" class="lab-logo" alt="KITE Lab logo" />
+        <span class="brand-copy">
+          <strong>PAVE Dataset</strong>
+          <small>KITE Lab Release</small>
+        </span>
+      </a>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="#overview">Overview</a>
-          <a href="#scenarios">Scenarios</a>
-          <a href="#highlights">Highlights</a>
-          <a href="#sensors">Sensors</a>
-          <a href="#access">Access</a>
-          <a href="#citation">Citation</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Production Autonomous Vehicle Evaluation</p>
-          <h1>PAVE Dataset</h1>
-          <p class="lead">
-            A real-world end-to-end dataset designed for system-level evaluation
-            of driving safety and reliability beyond perception-only benchmarks.
-          </p>
-          <p class="hero-note">
-            The current release provides a selected academic subset collected
-            under identified autonomous driving mode with synchronized sensors
-            and high-precision localization.
-          </p>
-
-          <div class="cta-row">
-            <a
-              class="button primary"
-              href="https://arxiv.org/abs/2511.14185"
-              target="_blank"
-              rel="noreferrer"
-            >Read Paper</a>
-            <a
-              class="button secondary"
-              href="https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH"
-              target="_blank"
-              rel="noreferrer"
-            >Download Subset</a>
-            <a
-              class="button tertiary"
-              href="https://github.com/KITE-Lab/PAVE_Dataset"
-              target="_blank"
-              rel="noreferrer"
-            >GitHub Repository</a>
-          </div>
-
-          <ul class="hero-tags" aria-label="Release attributes">
-            <li>Autonomous Driving</li>
-            <li>Autonomous Vehicles</li>
-            <li>End-to-End</li>
-            <li>Multi-Sensor</li>
-            <li>Real-World Data</li>
-            <li>High-Precision Localization</li>
-          </ul>
-        </div>
-
-        <aside class="hero-panel hero-showcase">
-          <div class="hero-visual-copy">
-            <p class="panel-label">TEST VEHICLES</p>
-            <h2>Test vehicles used for real-world autonomous-driving data collection.</h2>
-          </div>
-
-          <div class="hero-image-frame">
-            <img
-              src="docs/images/pave-vehicle-platform-collage-light-tech.png"
-              alt="A collage of instrumented production vehicles used in PAVE data collection across outdoor roads and indoor parking environments."
-            />
-          </div>
-        </aside>
-      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#platform">Platform</a>
+        <a href="#sensors">Sensors</a>
+        <a href="#access">Access</a>
+        <a href="#citation">Citation</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="overview" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-tag">Overview</p>
-          <h2>Why PAVE matters</h2>
-          <p>
-            Existing datasets such as KITTI, nuScenes, Waymo, Argoverse,
-            nuPlan, and Zenseact Open Dataset (ZOD) mainly support perception
-            tasks, while most are collected from manually driven vehicles.
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">Production Autonomous Vehicle Evaluation</p>
+          <h1>PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation</h1>
+          <p class="hero-subtitle">
+            A real-world autonomous-driving dataset built for system-level evaluation of safety, behavior, and trajectory quality beyond perception-only benchmarks.
           </p>
+
+          <div class="hero-authors" aria-label="Authors">
+            <span>Xiangyu Li</span>
+            <span>Chen Wang</span>
+            <span>Yumao Liu</span>
+            <span>Dengbo He</span>
+            <span>Jiahao Zhang</span>
+            <span>Ke Ma</span>
+          </div>
+
+          <p class="hero-affiliations">
+            KITE Lab, The Hong Kong University of Science and Technology (Guangzhou)
+          </p>
+
+          <div class="resource-row">
+            <a
+              class="resource-link"
+              href="https://arxiv.org/abs/2511.14185"
+              target="_blank"
+              rel="noreferrer"
+            >Paper</a>
+            <a
+              class="resource-link"
+              href="https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=TmWhyH"
+              target="_blank"
+              rel="noreferrer"
+            >Dataset</a>
+            <a
+              class="resource-link"
+              href="https://github.com/KITE-Lab/PAVE_Dataset"
+              target="_blank"
+              rel="noreferrer"
+            >Code</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Release attributes">
+            <li>Autonomous-mode collection</li>
+            <li>4 synchronized RGB cameras</li>
+            <li>RTK-enhanced GNSS/IMU trajectories</li>
+            <li>Scenario-level annotation schema</li>
+            <li>Selected academic subset release</li>
+          </ul>
+        </div>
+
+        <aside class="hero-figure panel">
+          <img
+            src="docs/images/pave-vehicle-platform-collage-light-tech.png"
+            alt="Instrumented production vehicles used in PAVE data collection."
+          />
+          <div class="figure-caption">
+            Test vehicles used for real-world autonomous-driving data collection.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="container narrow">
+        <div class="section-head section-head-overview center">
+          <p class="section-tag">Overview</p>
+          <h2>Abstract</h2>
+        </div>
+        <p class="abstract">
+          Existing datasets such as KITTI, nuScenes, Waymo, Argoverse, nuPlan, and Zenseact Open Dataset mainly support perception tasks and are largely collected from manually driven vehicles. PAVE closes this gap with real-world logs captured under identified autonomous-driving mode, enabling holistic evaluation of driving behavior, safety events, and trajectory quality with synchronized sensors and high-precision localization.
+        </p>
+
+        <div class="overview-grid">
+          <article class="panel stat-card">
+            <span class="stat-label">Release Focus</span>
+            <strong>System-level AV evaluation</strong>
+            <p>Designed for behavior analysis, safety assessment, and trajectory-aware benchmark construction.</p>
+          </article>
+          <article class="panel stat-card">
+            <span class="stat-label">Included Signals</span>
+            <strong>Images, trajectories, scenarios</strong>
+            <p>The public subset combines synchronized multi-view imagery, GNSS/IMU traces, and structured scenario metadata.</p>
+          </article>
+          <article class="panel stat-card">
+            <span class="stat-label">Current Release</span>
+            <strong>Academic non-commercial subset</strong>
+            <p>Released for research, reproducible experiments, and scientific publication under the PAVE academic license.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Comparison</p>
+          <h2>Dataset Comparison</h2>
           <p>
-            PAVE is designed to close that gap with real-world logs captured
-            under autonomous driving mode, enabling holistic evaluation of
-            intelligent driving behavior, safety events, and trajectory quality.
+            This table compares representative autonomous driving datasets across perception, motion, and end-to-end categories. Notably, PAVE uniquely provides explicitly labeled autonomous driving mode data, enabling direct analysis of real-world AV behavior.
           </p>
         </div>
 
-        <div class="comparison-card">
-          <div class="section-heading compact">
-            <p class="section-tag">Comparison</p>
-            <h3>Dataset Comparison</h3>
-            <p class="comparison-description">This table compares representative autonomous driving datasets across perception, motion, and end-to-end categories. Notably, PAVE uniquely provides explicitly labeled autonomous driving mode data, enabling direct analysis of real-world AV behavior.</p>
-          </div>
+        <div class="panel comparison-panel">
           <div class="comparison-table-wrap" role="region" aria-label="Dataset comparison table" tabindex="0">
             <table class="comparison-table">
               <thead>
@@ -318,176 +337,156 @@
           </div>
         </div>
 
-        <div class="included-panel">
-          <div class="section-heading compact">
-            <p class="section-tag">What's Included</p>
-            <h3>Released Dataset Components</h3>
-          </div>
-
-          <div class="included-grid">
-            <article class="info-card">
-              <span class="card-index">01</span>
-              <h4>Image Data</h4>
-              <p>Synchronized multi-view images from four cameras for perception and scene understanding.</p>
-            </article>
-            <article class="info-card">
-              <span class="card-index">02</span>
-              <h4>GNSS / IMU Trajectories</h4>
-              <p>High-precision vehicle trajectories for motion analysis and planning evaluation.</p>
-            </article>
-            <article class="info-card">
-              <span class="card-index">03</span>
-              <h4>Raw Video Data (Not Public)</h4>
-              <p>Continuous multi-camera video recordings are available internally but are not included in the public release.</p>
-            </article>
-            <article class="info-card">
-              <span class="card-index">04</span>
-              <h4>Scenario Labels</h4>
-              <p>Rich scenario-level annotations including road type, traffic conditions, lighting, and environmental attributes.</p>
-            </article>
-          </div>
+        <div class="card-grid card-grid-4">
+          <article class="panel info-card">
+            <span class="card-index">01</span>
+            <h3>Image Data</h3>
+            <p>Synchronized multi-view images from four cameras for perception and scene understanding.</p>
+          </article>
+          <article class="panel info-card">
+            <span class="card-index">02</span>
+            <h3>GNSS / IMU Trajectories</h3>
+            <p>High-precision vehicle trajectories for motion analysis and planning evaluation.</p>
+          </article>
+          <article class="panel info-card">
+            <span class="card-index">03</span>
+            <h3>Raw Video Data</h3>
+            <p>Continuous multi-camera recordings exist internally, but are not included in the current public release.</p>
+          </article>
+          <article class="panel info-card">
+            <span class="card-index">04</span>
+            <h3>Scenario Labels</h3>
+            <p>Structured attributes describe road type, traffic conditions, lighting, and environmental context.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="scenarios" class="section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-tag">Scenario Diversity</p>
+        <div class="section-head">
+          <p class="section-tag">Scenarios</p>
           <h2>Scenario Coverage and Structured Annotation Schema</h2>
           <p>
-            The PAVE dataset provides diverse real-world driving scenarios
-            together with structured scenario-level annotations to support
-            systematic condition-aware analysis, subset construction, and
-            reproducible benchmark evaluation.
+            The PAVE dataset provides diverse real-world driving scenarios together with structured scenario-level annotations to support systematic condition-aware analysis, subset construction, and reproducible benchmark evaluation.
           </p>
         </div>
 
-        <figure class="paper-figure figure-panel scenario-figure">
+        <figure class="panel media-panel">
           <img
             src="docs/images/figure_scenarios.png"
             alt="Representative PAVE multi-view images with object annotations and scene labels."
           />
         </figure>
 
-        <div class="scenario-annotation-block">
-          <div class="section-heading compact">
-            <p class="section-tag">Scenario Annotation</p>
-            <h3>Structured schema for scenario-level analysis</h3>
-          </div>
+        <div class="card-grid annotation-grid">
+          <article class="panel info-card">
+            <span class="card-index">01</span>
+            <h3>Area Type</h3>
+            <p><strong>Values</strong> [highway, urban, residential, rural, parking, other]</p>
+            <ul>
+              <li><strong>highway</strong>: expressways, ramps, toll stations, and other high-speed roads.</li>
+              <li><strong>urban</strong>: city roads with dense intersections and roadside buildings.</li>
+              <li><strong>residential</strong>: internal roads in campuses, communities, or industrial parks.</li>
+              <li><strong>rural</strong>: suburban or non-urban segments of national or provincial roads.</li>
+              <li><strong>parking</strong>: parking lots, garages, or designated parking areas.</li>
+              <li><strong>other</strong>: uncategorized or mixed cases.</li>
+            </ul>
+          </article>
 
-          <div class="annotation-grid">
-            <article class="info-card">
-              <span class="card-index">01</span>
-              <h4>Area Type</h4>
-              <p><strong>Allowed values</strong> [highway, urban, residential, rural, parking, other]</p>
-              <ul>
-                <li><strong>highway</strong>: highways, urban expressways, elevated roads, ramps, toll stations, and other high-speed road segments</li>
-                <li><strong>urban</strong>: city roads including arterial, secondary, and local streets with dense intersections and roadside buildings</li>
-                <li><strong>residential</strong>: internal roads within residential areas, campuses, or industrial parks</li>
-                <li><strong>rural</strong>: rural or suburban roads, including non-urban segments of national or provincial roads</li>
-                <li><strong>parking</strong>: parking lots, underground garages, or designated parking areas</li>
-                <li><strong>other</strong>: scenarios that cannot be clearly categorized into the above types</li>
-              </ul>
-            </article>
+          <article class="panel info-card">
+            <span class="card-index">02</span>
+            <h3>Lighting</h3>
+            <p><strong>Values</strong> [day, dusk, dawn, night, night_lit, night_unlit, other]</p>
+            <ul>
+              <li><strong>day</strong>: sufficient natural light, including overcast daytime.</li>
+              <li><strong>dusk</strong>: evening around sunset.</li>
+              <li><strong>dawn</strong>: low-light morning before full daylight.</li>
+              <li><strong>night</strong>: general nighttime conditions.</li>
+              <li><strong>night_lit</strong>: nighttime with clear artificial illumination.</li>
+              <li><strong>night_unlit</strong>: nighttime with little roadside lighting.</li>
+            </ul>
+          </article>
 
-            <article class="info-card">
-              <span class="card-index">02</span>
-              <h4>Lighting</h4>
-              <p><strong>Allowed values</strong> [day, dusk, dawn, night, night_lit, night_unlit, other]</p>
-              <ul>
-                <li><strong>day</strong>: daytime with sufficient natural light, including overcast daytime conditions</li>
-                <li><strong>dusk</strong>: evening period around sunset with declining ambient illumination</li>
-                <li><strong>dawn</strong>: early morning period with low natural light before full daylight</li>
-                <li><strong>night</strong>: general nighttime conditions when illumination detail is not further distinguished</li>
-                <li><strong>night_lit</strong>: nighttime with clear street lighting or other artificial illumination</li>
-                <li><strong>night_unlit</strong>: nighttime with little or no artificial roadside lighting</li>
-                <li><strong>other</strong>: unclear or special lighting conditions outside the standard categories</li>
-              </ul>
-            </article>
+          <article class="panel info-card">
+            <span class="card-index">03</span>
+            <h3>Weather</h3>
+            <p><strong>Values</strong> [clear, cloudy, rain, snow, fog, other]</p>
+            <ul>
+              <li><strong>clear</strong>: stable conditions without precipitation.</li>
+              <li><strong>cloudy</strong>: overcast conditions with reduced direct sunlight.</li>
+              <li><strong>rain</strong>: active rainfall or post-rain wet-road conditions.</li>
+              <li><strong>snow</strong>: snowfall or snow-covered scenes.</li>
+              <li><strong>fog</strong>: fog, haze, or reduced-visibility atmosphere.</li>
+              <li><strong>other</strong>: unclear or uncommon weather conditions.</li>
+            </ul>
+          </article>
 
-            <article class="info-card">
-              <span class="card-index">03</span>
-              <h4>Weather</h4>
-              <p><strong>Allowed values</strong> [clear, cloudy, rain, snow, fog, other]</p>
-              <ul>
-                <li><strong>clear</strong>: sunny or stable conditions without precipitation</li>
-                <li><strong>cloudy</strong>: overcast conditions with reduced direct sunlight</li>
-                <li><strong>rain</strong>: active rainfall or post-rain conditions with visible wet-road effects</li>
-                <li><strong>snow</strong>: snowfall or snow-covered road environments</li>
-                <li><strong>fog</strong>: fog, haze, or reduced-visibility atmospheric conditions</li>
-                <li><strong>other</strong>: unclear or special weather conditions not covered above</li>
-              </ul>
-            </article>
+          <article class="panel info-card">
+            <span class="card-index">04</span>
+            <h3>Road Surface</h3>
+            <p><strong>Values</strong> [paved, unpaved, other]</p>
+            <ul>
+              <li><strong>paved</strong>: asphalt or concrete roads with typical on-road characteristics.</li>
+              <li><strong>unpaved</strong>: dirt, gravel, or temporary construction paths.</li>
+              <li><strong>other</strong>: mixed or unclear surface types.</li>
+            </ul>
+          </article>
 
-            <article class="info-card">
-              <span class="card-index">04</span>
-              <h4>Road Surface</h4>
-              <p><strong>Allowed values</strong> [paved, unpaved, other]</p>
-              <ul>
-                <li><strong>paved</strong>: asphalt or concrete roads with regular on-road driving characteristics</li>
-                <li><strong>unpaved</strong>: dirt roads, gravel roads, or temporary construction paths with unsealed surfaces</li>
-                <li><strong>other</strong>: mixed or unclear surface types that cannot be reliably assigned</li>
-              </ul>
-            </article>
-
-            <article class="info-card">
-              <span class="card-index">05</span>
-              <h4>Driving State</h4>
-              <p><strong>Allowed values</strong> [stop, follow, cruise, lane_change, turn, other]</p>
-              <ul>
-                <li><strong>stop</strong>: the vehicle is stationary or nearly stationary, for example at a traffic light or stop line</li>
-                <li><strong>follow</strong>: the vehicle is closely following a leading vehicle in the same lane</li>
-                <li><strong>cruise</strong>: the vehicle maintains lane and speed without close leading-vehicle interaction</li>
-                <li><strong>lane_change</strong>: the vehicle is actively changing lanes or crossing lane boundaries</li>
-                <li><strong>turn</strong>: the vehicle is executing a turn or traversing a sustained curved path</li>
-                <li><strong>other</strong>: insufficient visual evidence or behaviors not covered by the standard states</li>
-              </ul>
-            </article>
-          </div>
+          <article class="panel info-card">
+            <span class="card-index">05</span>
+            <h3>Driving State</h3>
+            <p><strong>Values</strong> [stop, follow, cruise, lane_change, turn, other]</p>
+            <ul>
+              <li><strong>stop</strong>: stationary or nearly stationary at lights or stop lines.</li>
+              <li><strong>follow</strong>: closely following a leading vehicle.</li>
+              <li><strong>cruise</strong>: steady lane-keeping without close interaction.</li>
+              <li><strong>lane_change</strong>: active lane change or boundary crossing.</li>
+              <li><strong>turn</strong>: turning or traversing a sustained curved path.</li>
+              <li><strong>other</strong>: insufficient evidence or out-of-schema behaviors.</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="highlights" class="section alt">
+    <section id="highlights" class="section section-alt">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-head">
           <p class="section-tag">Highlights</p>
-          <h2>Research-oriented release design</h2>
+          <h2>Research-Oriented Release Design</h2>
           <p>
-            The current release is organized to support non-commercial research,
-            method development, and scientific publication around autonomous
-            vehicle evaluation.
+            The current public subset is organized to support non-commercial research, method development, and scientific publication around autonomous-vehicle evaluation.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
+        <div class="card-grid card-grid-3">
+          <article class="panel feature-card">
             <span class="card-index">01</span>
             <h3>Autonomous-mode Collection</h3>
-            <p>Real-world driving logs collected with autonomous driving engaged rather than purely manual operation.</p>
+            <p>Logs are captured with autonomous driving engaged rather than purely manual operation.</p>
           </article>
-          <article class="feature-card">
+          <article class="panel feature-card">
             <span class="card-index">02</span>
             <h3>System-level Evaluation</h3>
             <p>Supports safety and reliability analysis beyond isolated perception metrics.</p>
           </article>
-          <article class="feature-card">
+          <article class="panel feature-card">
             <span class="card-index">03</span>
             <h3>Trajectory and Behavior Analysis</h3>
-            <p>Designed for AV behavior understanding, trajectory evaluation, and benchmark construction.</p>
+            <p>Structured for AV behavior understanding, trajectory evaluation, and benchmark construction.</p>
           </article>
-          <article class="feature-card">
+          <article class="panel feature-card">
             <span class="card-index">04</span>
             <h3>Multi-modal Synchronization</h3>
-            <p>Synchronized sensor streams and localization records make temporal alignment a first-class capability.</p>
+            <p>Synchronized sensor streams and localization records make temporal alignment first-class.</p>
           </article>
-          <article class="feature-card">
+          <article class="panel feature-card">
             <span class="card-index">05</span>
             <h3>Privacy-aware Release</h3>
-            <p>Faces and license plates are anonymized in accordance with privacy and compliance requirements.</p>
+            <p>Faces and license plates are anonymized to match privacy and compliance requirements.</p>
           </article>
-          <article class="feature-card">
+          <article class="panel feature-card">
             <span class="card-index">06</span>
             <h3>Benchmark-ready Packaging</h3>
             <p>Suitable for academic evaluation, reproducible experiments, and future devkit expansion.</p>
@@ -496,36 +495,26 @@
       </div>
     </section>
 
-    <section id="on-vehicle-sensor-setup" class="section">
-      <div class="container setup-video-layout">
-        <div class="section-heading">
-          <p class="section-tag">Platform Installation</p>
+    <section id="platform" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Platform</p>
           <h2>On-Vehicle Sensor Setup</h2>
           <p>
-            This video demonstrates the installation process of the camera and
-            GNSS platform, together with the supporting on-vehicle data
-            collection setup used for real-world autonomous-driving data
-            acquisition in PAVE.
+            The installation video documents how the camera and GNSS platform is mounted and integrated on the test vehicle before real-world PAVE data acquisition.
           </p>
         </div>
 
-        <div class="setup-video-panel figure-panel">
-          <div class="setup-video-copy">
-            <p class="setup-video-kicker">Installation Demonstration</p>
+        <div class="panel video-panel">
+          <div class="video-copy">
+            <p class="video-kicker">Installation Demonstration</p>
             <p>
-              The recording presents how the sensing platform is mounted and
-              integrated on the test vehicle before data collection, providing a
-              practical view of the hardware arrangement behind the released
-              dataset.
+              The recording gives a practical view of the sensing hardware arrangement behind the released dataset and shows how the platform is prepared for synchronized capture.
             </p>
           </div>
-
-          <div class="setup-video-frame">
+          <div class="video-frame">
             <video controls preload="metadata" playsinline>
-              <source
-                src="docs/videos/on-vehicle-sensor-setup.mp4"
-                type="video/mp4"
-              />
+              <source src="docs/videos/on-vehicle-sensor-setup.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -533,67 +522,64 @@
       </div>
     </section>
 
-    <section id="sensors" class="section">
-      <div class="container sensors-layout">
-        <div class="section-heading">
-          <p class="section-tag">Sensor Setup</p>
-          <h2>Synchronized sensing with high-precision localization</h2>
+    <section id="sensors" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Sensors</p>
+          <h2>Synchronized Sensing with High-Precision Localization</h2>
           <p>
-            According to the paper, PAVE is built on a fixed multi-sensor
-            platform with four high-resolution RGB cameras and a high-precision
-            GNSS/IMU unit, enabling synchronized perception and trajectory
-            capture in real autonomous-driving operation.
+            PAVE is built on a fixed multi-sensor platform with four high-resolution RGB cameras and a high-precision GNSS/IMU unit, enabling synchronized perception and trajectory capture in real autonomous-driving operation.
           </p>
         </div>
 
-        <div class="sensor-spec-strip" aria-label="Sensor specification summary">
-          <article class="sensor-spec-card">
-            <span>Camera Suite</span>
+        <div class="card-grid card-grid-4 sensor-spec-grid" aria-label="Sensor specification summary">
+          <article class="panel sensor-spec-card">
+            <span class="stat-label">Camera Suite</span>
             <strong>4 RGB cameras</strong>
-            <p>Front-wide (120°), front-tele (30°), left-wide (120°), and right-wide (120°).</p>
+            <p>Front-wide (120&deg;), front-tele (30&deg;), left-wide (120&deg;), and right-wide (120&deg;).</p>
           </article>
-          <article class="sensor-spec-card">
-            <span>Image Quality</span>
+          <article class="panel sensor-spec-card">
+            <span class="stat-label">Image Quality</span>
             <strong>2592 x 1944 @ 30 FPS</strong>
             <p>All cameras follow the same high-resolution recording setup.</p>
           </article>
-          <article class="sensor-spec-card">
-            <span>Localization</span>
+          <article class="panel sensor-spec-card">
+            <span class="stat-label">Localization</span>
             <strong>20 Hz GNSS + 200 Hz IMU</strong>
             <p>GNSS is further enhanced by RTK differential correction via CORS.</p>
           </article>
-          <article class="sensor-spec-card">
-            <span>Accuracy</span>
+          <article class="panel sensor-spec-card">
+            <span class="stat-label">Accuracy</span>
             <strong>~0.8 cm</strong>
             <p>Paper-reported localization accuracy for trajectory alignment.</p>
           </article>
         </div>
 
-        <div class="sensor-grid">
-          <div class="sensor-cards">
-            <article class="sensor-card">
+        <div class="sensor-layout">
+          <div class="card-grid card-grid-2">
+            <article class="panel sensor-card">
               <h3>Front RGB Cameras</h3>
               <p>The forward-view setup combines a front-wide camera for broad scene coverage and a front-telephoto camera for longer-range observation.</p>
-              <p class="sensor-metrics">120° front-wide FOV, 30° front-telephoto FOV, and 2592 x 1944 capture at 30 FPS.</p>
+              <p class="sensor-metrics">120&deg; front-wide FOV, 30&deg; front-telephoto FOV, and 2592 x 1944 capture at 30 FPS.</p>
               <ul>
-                <li>120° wide FOV</li>
-                <li>30° narrow FOV</li>
+                <li>120&deg; wide FOV</li>
+                <li>30&deg; narrow FOV</li>
                 <li>2592 x 1944 at 30 FPS</li>
               </ul>
             </article>
 
-            <article class="sensor-card">
+            <article class="panel sensor-card">
               <h3>Side-wide Cameras</h3>
               <p>Left and right side cameras expand lateral coverage so the dataset can better capture surrounding traffic and road context.</p>
-              <p class="sensor-metrics">Both side-wide cameras use 120° FOV and record at 2592 x 1944 resolution and 30 FPS.</p>
+              <p class="sensor-metrics">Both side-wide cameras use 120&deg; FOV and record at 2592 x 1944 resolution and 30 FPS.</p>
               <ul>
-                <li>120° field of view</li>
+                <li>120&deg; field of view</li>
                 <li>2592 x 1944 at 30 FPS</li>
                 <li>Aligned with front-view capture</li>
               </ul>
             </article>
 
-            <article class="sensor-card">
+            <article class="panel sensor-card">
               <h3>GNSS / IMU Module</h3>
               <p>The localization stack fuses GNSS and IMU measurements, while RTK differential correction through the CORS network improves position accuracy.</p>
               <p class="sensor-metrics">The paper reports 20 Hz GNSS, 200 Hz IMU, and approximately 0.8 cm localization accuracy.</p>
@@ -604,8 +590,8 @@
               </ul>
             </article>
 
-            <article class="sensor-card">
-              <h3>Synchronization & Output</h3>
+            <article class="panel sensor-card">
+              <h3>Synchronization &amp; Output</h3>
               <p>GNSS time acts as the global temporal reference so that video streams and trajectory states stay aligned across the whole system.</p>
               <p class="sensor-metrics">Logged states include latitude, longitude, altitude, velocity, heading, roll, pitch, and yaw.</p>
               <ul>
@@ -617,34 +603,30 @@
           </div>
         </div>
 
-        <div class="sensor-setup-gallery">
-          <figure class="paper-figure figure-panel sensor-setup-figure">
-            <img
-              src="docs/images/SensorSetup(2).png"
-              alt="Current sensor mounting design for the PAVE vehicle."
-            />
-            <figcaption class="sensor-setup-caption">Current Platform Design</figcaption>
-          </figure>
-        </div>
+        <figure class="panel media-panel sensor-figure sensor-figure-full">
+          <img
+            src="docs/images/SensorSetup(2).png"
+            alt="Current sensor mounting design for the PAVE vehicle."
+          />
+          <figcaption class="figure-caption">Current platform design and sensor placement on the PAVE collection vehicle.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section id="access" class="section alt">
+    <section id="access" class="section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-head">
           <p class="section-tag">Access</p>
-          <h2>Academic release, formal usage terms</h2>
+          <h2>Academic Release and Usage Terms</h2>
           <p>
-            This repository currently releases a selected academic subset for
-            non-commercial research, method development, and scientific
-            publication.
+            This repository currently releases a selected academic subset for non-commercial research, method development, and scientific publication.
           </p>
         </div>
 
-        <div class="access-grid">
-          <article class="access-card access-card-primary">
+        <div class="card-grid card-grid-2 access-grid">
+          <article class="panel access-card access-card-primary">
             <h3>Data Access</h3>
-            <p>Download the currently released academic subset and explore the repository documentation.</p>
+            <p>Download the released academic subset and browse the project repository.</p>
             <div class="stack-links">
               <a
                 class="inline-link"
@@ -661,29 +643,29 @@
             </div>
           </article>
 
-          <article class="access-card">
+          <article class="panel access-card">
             <h3>License Summary</h3>
             <p>The release is governed by the PAVE Academic Non-Commercial License v1.0.</p>
             <ul>
-              <li>Permitted: academic research, scientific investigation, non-commercial benchmarking, theses, and papers</li>
-              <li>Prohibited: commercial use, redistribution, resale, sublicensing, or proprietary deployment</li>
-              <li>Commercial use requires a separate licensing agreement</li>
+              <li>Permitted: academic research, scientific investigation, non-commercial benchmarking, theses, and papers.</li>
+              <li>Prohibited: commercial use, redistribution, resale, sublicensing, or proprietary deployment.</li>
+              <li>Commercial use requires a separate licensing agreement.</li>
             </ul>
             <a class="inline-link" href="License.txt">Read full license</a>
           </article>
 
-          <article class="access-card">
+          <article class="panel access-card">
             <h3>Usage Conditions</h3>
             <ul>
-              <li>Proper citation of the PAVE paper is mandatory</li>
-              <li>Dataset usage alone does not justify co-authorship</li>
-              <li>The release is provided as is, without warranty</li>
-              <li>Violation of license terms results in automatic termination</li>
+              <li>Proper citation of the PAVE paper is mandatory.</li>
+              <li>Dataset usage alone does not justify co-authorship.</li>
+              <li>The release is provided as is, without warranty.</li>
+              <li>Violation of license terms results in automatic termination.</li>
             </ul>
           </article>
 
-          <article class="access-card">
-            <h3>Full Dataset & Licensing</h3>
+          <article class="panel access-card">
+            <h3>Full Dataset &amp; Licensing</h3>
             <p>For full-dataset access, commercial licenses, industrial evaluation services, or extended annotations and benchmarks:</p>
             <a class="inline-link" href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
           </article>
@@ -691,18 +673,15 @@
       </div>
     </section>
 
-    <section id="citation" class="section">
-      <div class="container citation-layout">
-        <div class="section-heading compact">
+    <section id="citation" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-head center">
           <p class="section-tag">Citation</p>
-          <h2>Please cite the dataset paper</h2>
-          <p>
-            Citation is a formal requirement for any research output that uses
-            this dataset, even partially.
-          </p>
+          <h2>Please Cite the Dataset Paper</h2>
+          <p>Citation is a formal requirement for any research output that uses this dataset, even partially.</p>
         </div>
 
-        <div class="citation-card">
+        <div class="panel citation-card">
           <pre><code>@article{Li2025PAVE,
   title   = {PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation},
   author  = {Xiangyu Li and Chen Wang and Yumao Liu and Dengbo He and Jiahao Zhang and Ke Ma},
@@ -719,28 +698,28 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
-      <div class="container contact-panel">
-        <div>
-          <p class="section-tag">Contact</p>
-          <h2>Dataset inquiries and licensing requests</h2>
-          <p>
-            Please reach out for full dataset access, licensing clarification,
-            extended benchmarks, or industry collaboration around autonomous
-            vehicle evaluation.
-          </p>
-        </div>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="panel contact-panel">
+          <div>
+            <p class="section-tag">Contact</p>
+            <h2>Dataset Inquiries and Licensing Requests</h2>
+            <p>
+              Please reach out for full dataset access, licensing clarification, extended benchmarks, or industry collaboration around autonomous-vehicle evaluation.
+            </p>
+          </div>
 
-        <div class="contact-details">
-          <p><strong>Email</strong></p>
-          <a href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
-          <p class="contact-note">KITE Lab, HKUST(GZ)</p>
+          <div class="contact-details">
+            <p><strong>Email</strong></p>
+            <a href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
+            <p class="contact-note">KITE Lab, HKUST(GZ)</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <p>PAVE Dataset</p>
       <p>&copy; 2026 KITE Lab</p>
