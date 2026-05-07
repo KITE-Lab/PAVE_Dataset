@@ -165,10 +165,10 @@ code {
 
 .hero h1 {
   margin: 0.7rem 0 1.1rem;
-  font-size: clamp(2.15rem, 4.2vw, 3.7rem);
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  max-width: 11.5ch;
+  font-size: clamp(2.05rem, 3.85vw, 3.35rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  max-width: 13.6ch;
 }
 
 .hero-subtitle {
@@ -221,12 +221,14 @@ code {
 }
 
 .hero-meta {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
   gap: 0.8rem;
   padding: 0;
   margin: 1.7rem 0 0;
   list-style: none;
+  max-width: 100%;
+  justify-content: start;
 }
 
 .hero-meta li {
@@ -605,13 +607,18 @@ code {
   }
 
   .hero h1 {
-    font-size: clamp(1.9rem, 8.2vw, 2.75rem);
+    font-size: clamp(1.9rem, 8vw, 2.65rem);
     max-width: 100%;
   }
 
   .resource-row,
   .hero-meta {
     gap: 0.7rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .card-grid-4,
