@@ -14,9 +14,18 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
     rel="stylesheet"
   />
+  <script>
+    (function () {
+      var storedPreference = localStorage.getItem("themePreference") || "auto";
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var resolvedTheme = storedPreference === "auto" ? (prefersDark ? "dark" : "light") : storedPreference;
+      document.documentElement.setAttribute("data-theme", resolvedTheme);
+      document.documentElement.setAttribute("data-theme-preference", storedPreference);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-theme="light" data-theme-preference="auto">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="PAVE Dataset home">
@@ -27,17 +36,43 @@
         </span>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#overview">Overview</a>
-        <a href="#comparison">Comparison</a>
-        <a href="#scenarios">Scenarios</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#platform">Platform</a>
-        <a href="#sensors">Sensors</a>
-        <a href="#access">Access</a>
-        <a href="#citation">Citation</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#comparison">Comparison</a>
+          <a href="#scenarios">Scenarios</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#platform">Platform</a>
+          <a href="#sensors">Sensors</a>
+          <a href="#access">Access</a>
+          <a href="#citation">Citation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="theme-switcher" role="group" aria-label="Theme switcher">
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-option="light"
+            aria-label="Use light theme"
+            aria-pressed="false"
+          >Light</button>
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-option="dark"
+            aria-label="Use dark theme"
+            aria-pressed="false"
+          >Dark</button>
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-option="auto"
+            aria-label="Follow system theme"
+            aria-pressed="true"
+          >Auto</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -725,5 +760,6 @@
       <p>&copy; 2026 KITE Lab</p>
     </div>
   </footer>
+  <script src="theme.js"></script>
 </body>
 </html>
