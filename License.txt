@@ -58,7 +58,8 @@ of the following paper:
 
 Li, X., Wang, C., Liu, Y., He, D., Zhang, J., Ma, K.
 "PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation"
-arXiv:2511.14185, 2025.
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition,
+pp. 1010--1018, 2026.
 
 Failure to provide proper citation constitutes misuse of the Dataset.
 

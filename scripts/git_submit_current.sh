@@ -8,7 +8,7 @@ Usage:
 
 Examples:
   ./scripts/git_submit_current.sh
-  ./scripts/git_submit_current.sh "更新数据集说明"
+  ./scripts/git_submit_current.sh "update dataset documentation"
   ./scripts/git_submit_current.sh --dry-run
 EOF
 }
@@ -35,7 +35,7 @@ fi
 
 COMMIT_MESSAGE="${*:-}"
 if [[ -z "${COMMIT_MESSAGE}" ]]; then
-  COMMIT_MESSAGE="更新 PAVE_Dataset 代码 $(date '+%Y-%m-%d %H:%M:%S')"
+  COMMIT_MESSAGE="chore: update PAVE_Dataset $(date '+%Y-%m-%d %H:%M:%S')"
 fi
 
 cd "${REPO_ROOT}"

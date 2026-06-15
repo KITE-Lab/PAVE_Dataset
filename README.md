@@ -263,11 +263,12 @@ kema@hkust-gz.edu.cn
 If you use this dataset in your research, reports, or publications, cite the PAVE dataset paper:
 
 ```bibtex
-@article{Li2025PAVE,
-  title  = {PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation},
-  author = {Xiangyu Li and Chen Wang and Yumao Liu and Dengbo He and Jiahao Zhang and Ke Ma},
-  journal = {arXiv preprint arXiv:2511.14185},
-  year   = {2025}
+@inproceedings{li2026pave,
+  title={PAVE: An end-to-end dataset for production autonomous vehicle evaluation},
+  author={Li, Xiangyu and Wang, Chen and Liu, Yumao and He, Dengbo and Zhang, Jiahao and Ma, Ke},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1010--1018},
+  year={2026}
 }
 ```
 
