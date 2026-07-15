@@ -39,11 +39,12 @@
       <div class="header-actions">
         <nav class="nav" aria-label="Primary">
           <a href="#overview">Overview</a>
+          <a href="#sensors">Sensors</a>
+          <a href="#vehicles">Vehicles</a>
+          <a href="#project-video">Project Video</a>
           <a href="#comparison">Comparison</a>
           <a href="#scenarios">Scenarios</a>
           <a href="#highlights">Highlights</a>
-          <a href="#platform">Platform</a>
-          <a href="#sensors">Sensors</a>
           <a href="#access">Access</a>
           <a href="#citation">Citation</a>
           <a href="#contact">Contact</a>
@@ -171,7 +172,132 @@
       </div>
     </section>
 
-    <section id="comparison" class="section section-alt">
+    <section id="sensors" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Sensors</p>
+          <h2>Sensor Setup</h2>
+        </div>
+
+        <figure class="panel media-panel sensor-figure sensor-figure-full">
+          <img
+            src="docs/images/pave_sensor_layout.png"
+            alt="PAVE vehicle sensor layout showing camera fields of view, GPS receivers, IMU, and vehicle axes."
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="vehicles" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Vehicles</p>
+          <h2>Production AVs in PAVE</h2>
+        </div>
+
+        <div
+          class="panel vehicle-carousel"
+          data-carousel
+          tabindex="0"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="PAVE vehicle image gallery"
+        >
+          <div class="vehicle-carousel__viewport">
+            <div class="vehicle-carousel__track" data-carousel-track>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="false">
+                <img src="docs/images/车辆品牌合集/AION.jpeg" alt="AION vehicle" loading="eager" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/AITO M7 2024.png" alt="AITO M7 2024 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/AITO M7 2026.jpeg" alt="AITO M7 2026 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/Avtar 11.jpeg" alt="Avtar 11 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/Li Auto L9.jpeg" alt="Li Auto L9 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/NIO ET5.jpeg" alt="NIO ET5 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/NIO ET7.jpeg" alt="NIO ET7 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/Tesla Model Y.jpg" alt="Tesla Model Y vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/Toyota bZ3X.jpg" alt="Toyota bZ3X vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/XPeng G9.jpeg" alt="XPeng G9 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/XPeng P7.jpeg" alt="XPeng P7 vehicle" loading="lazy" decoding="async" />
+              </div>
+              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
+                <img src="docs/images/车辆品牌合集/Xiaomi YU7.jpeg" alt="Xiaomi YU7 vehicle" loading="lazy" decoding="async" />
+              </div>
+            </div>
+
+            <button class="vehicle-carousel__button vehicle-carousel__button--previous" type="button" data-carousel-previous aria-label="Show previous vehicle">
+              <span aria-hidden="true">&#8592;</span>
+            </button>
+            <button class="vehicle-carousel__button vehicle-carousel__button--next" type="button" data-carousel-next aria-label="Show next vehicle">
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </div>
+
+          <div class="vehicle-carousel__footer">
+            <p class="vehicle-carousel__title" data-carousel-title>AION</p>
+            <div class="vehicle-carousel__controls">
+              <p class="vehicle-carousel__count" data-carousel-count aria-label="Slide 1 of 12">
+                <span data-carousel-current>1</span>
+                <span aria-hidden="true"> / </span>
+                <span data-carousel-total>12</span>
+              </p>
+              <div class="vehicle-carousel__dots" role="group" aria-label="Choose a vehicle slide">
+                <button type="button" class="vehicle-carousel__dot active" data-carousel-dot data-slide-index="0" aria-label="Show slide 1: AION" aria-current="true"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="1" aria-label="Show slide 2: AITO M7 2024" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="2" aria-label="Show slide 3: AITO M7 2026" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="3" aria-label="Show slide 4: Avtar 11" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="4" aria-label="Show slide 5: Li Auto L9" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="5" aria-label="Show slide 6: NIO ET5" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="6" aria-label="Show slide 7: NIO ET7" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="7" aria-label="Show slide 8: Tesla Model Y" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="8" aria-label="Show slide 9: Toyota bZ3X" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="9" aria-label="Show slide 10: XPeng G9" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="10" aria-label="Show slide 11: XPeng P7" aria-current="false"></button>
+                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="11" aria-label="Show slide 12: Xiaomi YU7" aria-current="false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-video" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Video</p>
+          <h2>Project Video</h2>
+        </div>
+
+        <div class="panel video-panel">
+          <div class="video-frame">
+            <video controls preload="metadata" playsinline>
+              <source src="docs/videos/pave-project-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section">
       <div class="container">
         <div class="section-head">
           <p class="section-tag">Comparison</p>
@@ -354,8 +480,8 @@
                   <th scope="row">PAVE</th>
                   <td><strong>2025</strong></td>
                   <td><strong>32727</strong></td>
-                  <td><strong>140</strong></td>
-                  <td><strong>5</strong></td>
+                  <td><strong>222.24</strong></td>
+                  <td><strong>9</strong></td>
                   <td><strong>H + A (labeled)</strong></td>
                   <td><strong>7 major cities in China and USA</strong></td>
                   <td><strong>9.9</strong></td>
@@ -397,7 +523,7 @@
       </div>
     </section>
 
-    <section id="scenarios" class="section">
+    <section id="scenarios" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <p class="section-tag">Scenarios</p>
@@ -485,7 +611,7 @@
       </div>
     </section>
 
-    <section id="highlights" class="section section-alt">
+    <section id="highlights" class="section">
       <div class="container">
         <div class="section-head">
           <p class="section-tag">Highlights</p>
@@ -530,125 +656,7 @@
       </div>
     </section>
 
-    <section id="platform" class="section">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-tag">Platform</p>
-          <h2>On-Vehicle Sensor Setup</h2>
-          <p>
-            The installation video documents how the camera and GNSS platform is mounted and integrated on the test vehicle before real-world PAVE data acquisition.
-          </p>
-        </div>
-
-        <div class="panel video-panel">
-          <div class="video-copy">
-            <p class="video-kicker">Installation Demonstration</p>
-            <p>
-              The recording gives a practical view of the sensing hardware arrangement behind the released dataset and shows how the platform is prepared for synchronized capture.
-            </p>
-          </div>
-          <div class="video-frame">
-            <video controls preload="metadata" playsinline>
-              <source src="docs/videos/on-vehicle-sensor-setup.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sensors" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-tag">Sensors</p>
-          <h2>Synchronized Sensing with High-Precision Localization</h2>
-          <p>
-            PAVE is built on a fixed multi-sensor platform with four high-resolution RGB cameras and a high-precision GNSS/IMU unit, enabling synchronized perception and trajectory capture in real autonomous-driving operation.
-          </p>
-        </div>
-
-        <div class="card-grid card-grid-4 sensor-spec-grid" aria-label="Sensor specification summary">
-          <article class="panel sensor-spec-card">
-            <span class="stat-label">Camera Suite</span>
-            <strong>4 RGB cameras</strong>
-            <p>Front-wide (120&deg;), front-tele (30&deg;), left-wide (120&deg;), and right-wide (120&deg;).</p>
-          </article>
-          <article class="panel sensor-spec-card">
-            <span class="stat-label">Image Quality</span>
-            <strong>2592 x 1944 @ 30 FPS</strong>
-            <p>All cameras follow the same high-resolution recording setup.</p>
-          </article>
-          <article class="panel sensor-spec-card">
-            <span class="stat-label">Localization</span>
-            <strong>20 Hz GNSS + 200 Hz IMU</strong>
-            <p>GNSS is further enhanced by RTK differential correction via CORS.</p>
-          </article>
-          <article class="panel sensor-spec-card">
-            <span class="stat-label">Accuracy</span>
-            <strong>~0.8 cm</strong>
-            <p>Paper-reported localization accuracy for trajectory alignment.</p>
-          </article>
-        </div>
-
-        <div class="sensor-layout">
-          <div class="card-grid card-grid-2">
-            <article class="panel sensor-card">
-              <h3>Front RGB Cameras</h3>
-              <p>The forward-view setup combines a front-wide camera for broad scene coverage and a front-telephoto camera for longer-range observation.</p>
-              <p class="sensor-metrics">120&deg; front-wide FOV, 30&deg; front-telephoto FOV, and 2592 x 1944 capture at 30 FPS.</p>
-              <ul>
-                <li>120&deg; wide FOV</li>
-                <li>30&deg; narrow FOV</li>
-                <li>2592 x 1944 at 30 FPS</li>
-              </ul>
-            </article>
-
-            <article class="panel sensor-card">
-              <h3>Side-wide Cameras</h3>
-              <p>Left and right side cameras expand lateral coverage so the dataset can better capture surrounding traffic and road context.</p>
-              <p class="sensor-metrics">Both side-wide cameras use 120&deg; FOV and record at 2592 x 1944 resolution and 30 FPS.</p>
-              <ul>
-                <li>120&deg; field of view</li>
-                <li>2592 x 1944 at 30 FPS</li>
-                <li>Aligned with front-view capture</li>
-              </ul>
-            </article>
-
-            <article class="panel sensor-card">
-              <h3>GNSS / IMU Module</h3>
-              <p>The localization stack fuses GNSS and IMU measurements, while RTK differential correction through the CORS network improves position accuracy.</p>
-              <p class="sensor-metrics">The paper reports 20 Hz GNSS, 200 Hz IMU, and approximately 0.8 cm localization accuracy.</p>
-              <ul>
-                <li>20 Hz GNSS</li>
-                <li>200 Hz IMU</li>
-                <li>RTK-level precision</li>
-              </ul>
-            </article>
-
-            <article class="panel sensor-card">
-              <h3>Synchronization &amp; Output</h3>
-              <p>GNSS time acts as the global temporal reference so that video streams and trajectory states stay aligned across the whole system.</p>
-              <p class="sensor-metrics">Logged states include latitude, longitude, altitude, velocity, heading, roll, pitch, and yaw.</p>
-              <ul>
-                <li>Shared reference clock</li>
-                <li>Cross-sensor temporal consistency</li>
-                <li>Reliable trajectory reconstruction</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-
-        <figure class="panel media-panel sensor-figure sensor-figure-full">
-          <img
-            src="docs/images/SensorSetup(2).png"
-            alt="Current sensor mounting design for the PAVE vehicle."
-          />
-          <figcaption class="figure-caption">Current platform design and sensor placement on the PAVE collection vehicle.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="access" class="section">
+    <section id="access" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <p class="section-tag">Access</p>
@@ -708,7 +716,7 @@
       </div>
     </section>
 
-    <section id="citation" class="section section-alt">
+    <section id="citation" class="section">
       <div class="container narrow">
         <div class="section-head center">
           <p class="section-tag">Citation</p>
@@ -734,7 +742,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
       <div class="container">
         <div class="panel contact-panel">
           <div>
