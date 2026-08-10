@@ -233,26 +233,28 @@ The calibration workflow selects useful turning samples, refines camera extrinsi
 
 ## License And Usage Restrictions
 
-This repository releases a selected academic subset of the PAVE dataset for non-commercial research, method development, education, and scientific publication.
+This repository releases a selected academic subset of the PAVE dataset for non-commercial academic research, method development, education, and scientific publication.
 
 By accessing or using this dataset subset, you agree to the following terms:
 
-- Permitted uses: academic research, scientific investigation, method development, validation, non-commercial benchmarking, course projects, theses, dissertations, and scientific papers.
-- Prohibited uses: commercial or industrial use, product development, internal industrial benchmarking, deployment, consulting, contract research, paid services, redistribution, resale, sublicensing, sharing of the released subset, or integration into proprietary or closed-source systems.
+- Permitted uses: academic research and scientific investigation; method development, validation, and benchmarking; publication in peer-reviewed journals, conferences, theses, and dissertations; and non-commercial teaching and educational activities.
+- Prohibited uses: any commercial or industrial use, including product or system development, internal industrial evaluation or benchmarking, model training for deployment, consulting, contract research, paid services, redistribution, resale, sublicensing, sharing of the Dataset or any modified or derived version, or use in a proprietary or closed-source commercial system.
 - Commercial use requires a separate licensing agreement with the dataset maintainers.
-- Proper citation of the PAVE paper is required for any research output using the dataset, even partially.
+- Proper citation of the PAVE paper is required for any publication, presentation, report, or derivative work using the Dataset, in whole or in part.
 - Dataset usage alone does not justify listing the original PAVE authors as co-authors unless they contributed substantially to the research itself.
-- The dataset is provided "as is", without warranty of completeness, accuracy, or fitness for a particular purpose.
+- The Dataset is provided "as is", without warranty of any kind, including merchantability, fitness for a particular purpose, and non-infringement; the authors and copyright holders are not liable for claims, damages, or other liability arising from use.
 
-See [License.txt](License.txt) for the full PAVE Academic Non-Commercial License v1.0.
+- The license automatically terminates when its conditions are violated; upon termination, all copies of the Dataset must be deleted.
+
+The authoritative usage summary is [Readme.txt](docs/archive/legacy-assets/Readme.txt); see [License.txt](License.txt) for the formal PAVE Academic Non-Commercial License v1.0.
 
 ## Privacy And Ethical Use
 
-Users should uphold applicable privacy requirements, avoid misuse or misinterpretation of the data, and maintain rigorous scientific and ethical standards. Do not redistribute the released subset or use it in commercial or proprietary systems without a separate license.
+Users should uphold data privacy and applicable regulations, avoid misuse or misinterpretation, and maintain rigorous scientific and ethical standards. Unauthorized commercial use will be pursued under applicable licensing agreements; contact the maintainers before any use that may be commercial.
 
 ## Contact
 
-For the full dataset, commercial licenses, industrial evaluation services, or extended annotations and benchmarks, contact:
+For the full dataset, commercial licensing, extended access, usage-rights clarification, industrial evaluation services, or extended annotations and benchmarks, contact:
 
 ```text
 kema@hkust-gz.edu.cn
@@ -260,7 +262,7 @@ kema@hkust-gz.edu.cn
 
 ## Citation
 
-If you use this dataset in your research, reports, or publications, cite the PAVE dataset paper:
+Any publication, presentation, report, or derivative work that uses this Dataset, in whole or in part, must cite the PAVE dataset paper:
 
 ```bibtex
 @inproceedings{li2026pave,
@@ -272,4 +274,28 @@ If you use this dataset in your research, reports, or publications, cite the PAV
 }
 ```
 
-This citation is a formal requirement for any research, report, or publication that uses the released subset, even partially.
+This citation is a formal requirement; failure to provide proper citation constitutes misuse of the Dataset.
+
+## Acknowledgement And Community
+
+Proper citation is required and is sufficient acknowledgment unless the dataset authors make a substantial intellectual contribution to the corresponding research. We appreciate users' interest and encourage them to star the repository and include the citation in publications that use this Dataset.
+
+Unauthorized commercial use will be pursued under applicable licensing agreements. If a planned use may be commercial, contact the maintainers before proceeding.
+
+## Website Source Map
+
+The GitHub Pages site is maintained as a static front end:
+
+- `index.html` contains page sections, database snapshot values, annotation definitions, thresholds, and image references.
+- `style.css` contains theme surfaces, responsive vehicle grid, specification tables, annotation cards, and media sizing.
+- `theme.js` contains only theme preference persistence and system-theme synchronization.
+- `docs/images/site/` contains images used by the static website.
+- `docs/images/vehicles/` contains the 12 ASCII-named vehicle gallery images.
+- `docs/guides/` contains the English equipment-installation guides.
+- `docs/research/` contains dataset reviews and research notes.
+- `docs/reference/pave_paper.pdf` is the local copy of the PAVE paper.
+- `docs/videos/` contains the project and sensor-installation videos.
+- `docs/images/site/pave_sensor_layout.png` is the reused sensor-view figure; it is not duplicated from the LaTeX workspace.
+- Permission terms are summarized in `docs/archive/legacy-assets/Readme.txt` and formalized in `License.txt`.
+- `../PAVE_Dataset_Web/` is the database web service source and was not modified.
+- `../PAVE_Dataset_Process/insert_pipeline/` contains the annotation-generation and threshold configuration referenced by the website.

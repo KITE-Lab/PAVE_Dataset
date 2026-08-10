@@ -29,7 +29,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="PAVE Dataset home">
-        <img src="docs/images/kite_lab2.jpg" class="lab-logo" alt="KITE Lab logo" />
+        <img src="docs/images/site/kite_lab2.jpg" class="lab-logo" alt="KITE Lab logo" />
         <span class="brand-copy">
           <strong>PAVE Dataset</strong>
           <small>KITE Lab Release</small>
@@ -42,6 +42,7 @@
           <a href="#sensors">Sensors</a>
           <a href="#vehicles">Vehicles</a>
           <a href="#scenarios">Scenarios</a>
+          <a href="#data-format">Data Format</a>
           <a href="#access">Access</a>
           <a href="#citation">Citation</a>
         </nav>
@@ -119,7 +120,7 @@
 
           <ul class="hero-meta" aria-label="Release attributes">
             <li>Autonomous-mode collection</li>
-            <li>4 synchronized RGB cameras</li>
+            <li>6 database camera roles</li>
             <li>RTK-enhanced GNSS/IMU trajectories</li>
             <li>Scenario-level annotation schema</li>
             <li>Selected academic subset release</li>
@@ -128,7 +129,7 @@
 
         <aside class="hero-figure panel">
           <img
-            src="docs/images/pave-vehicle-platform-collage-light-tech.png"
+            src="docs/images/site/pave-vehicle-platform-collage-light-tech.png"
             alt="Instrumented production vehicles used in PAVE data collection."
           />
           <div class="figure-caption">
@@ -177,7 +178,7 @@
 
         <figure class="panel media-panel sensor-figure sensor-figure-full">
           <img
-            src="docs/images/pave_sensor_layout.png"
+            src="docs/images/site/pave_sensor_layout.png"
             alt="PAVE vehicle sensor layout showing camera fields of view, GPS receivers, IMU, and vehicle axes."
           />
         </figure>
@@ -189,88 +190,58 @@
         <div class="section-head">
           <p class="section-tag">Vehicles</p>
           <h2>Production AVs in PAVE</h2>
+          <p>All 12 reference vehicle photographs are shown together; this visual gallery is not a one-to-one count of the 11 database vehicles.</p>
         </div>
 
-        <div
-          class="panel vehicle-carousel"
-          data-carousel
-          tabindex="0"
-          role="region"
-          aria-roledescription="carousel"
-          aria-label="PAVE vehicle image gallery"
-        >
-          <div class="vehicle-carousel__viewport">
-            <div class="vehicle-carousel__track" data-carousel-track>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="false">
-                <img src="docs/images/车辆品牌合集/AION.jpeg" alt="AION vehicle" loading="eager" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/AITO M7 2024.png" alt="AITO M7 2024 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/AITO M7 2026.jpeg" alt="AITO M7 2026 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/Avtar 11.jpeg" alt="Avtar 11 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/Li Auto L9.jpeg" alt="Li Auto L9 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/NIO ET5.jpeg" alt="NIO ET5 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/NIO ET7.jpeg" alt="NIO ET7 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/Tesla Model Y.jpg" alt="Tesla Model Y vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/Toyota bZ3X.jpg" alt="Toyota bZ3X vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/XPeng G9.jpeg" alt="XPeng G9 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/XPeng P7.jpeg" alt="XPeng P7 vehicle" loading="lazy" decoding="async" />
-              </div>
-              <div class="vehicle-carousel__slide" data-carousel-slide aria-hidden="true">
-                <img src="docs/images/车辆品牌合集/Xiaomi YU7.jpeg" alt="Xiaomi YU7 vehicle" loading="lazy" decoding="async" />
-              </div>
-            </div>
-
-            <button class="vehicle-carousel__button vehicle-carousel__button--previous" type="button" data-carousel-previous aria-label="Show previous vehicle">
-              <span aria-hidden="true">&#8592;</span>
-            </button>
-            <button class="vehicle-carousel__button vehicle-carousel__button--next" type="button" data-carousel-next aria-label="Show next vehicle">
-              <span aria-hidden="true">&#8594;</span>
-            </button>
-          </div>
-
-          <div class="vehicle-carousel__footer">
-            <p class="vehicle-carousel__title" data-carousel-title>AION</p>
-            <div class="vehicle-carousel__controls">
-              <p class="vehicle-carousel__count" data-carousel-count aria-label="Slide 1 of 12">
-                <span data-carousel-current>1</span>
-                <span aria-hidden="true"> / </span>
-                <span data-carousel-total>12</span>
-              </p>
-              <div class="vehicle-carousel__dots" role="group" aria-label="Choose a vehicle slide">
-                <button type="button" class="vehicle-carousel__dot active" data-carousel-dot data-slide-index="0" aria-label="Show slide 1: AION" aria-current="true"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="1" aria-label="Show slide 2: AITO M7 2024" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="2" aria-label="Show slide 3: AITO M7 2026" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="3" aria-label="Show slide 4: Avtar 11" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="4" aria-label="Show slide 5: Li Auto L9" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="5" aria-label="Show slide 6: NIO ET5" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="6" aria-label="Show slide 7: NIO ET7" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="7" aria-label="Show slide 8: Tesla Model Y" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="8" aria-label="Show slide 9: Toyota bZ3X" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="9" aria-label="Show slide 10: XPeng G9" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="10" aria-label="Show slide 11: XPeng P7" aria-current="false"></button>
-                <button type="button" class="vehicle-carousel__dot" data-carousel-dot data-slide-index="11" aria-label="Show slide 12: Xiaomi YU7" aria-current="false"></button>
-              </div>
-            </div>
-          </div>
+        <div class="panel vehicle-grid" aria-label="PAVE vehicle image gallery">
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/aion.jpeg" alt="AION vehicle" loading="eager" decoding="async" />
+            <figcaption>AION</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/aito_m7_2024.png" alt="AITO M7 2024 vehicle" loading="lazy" decoding="async" />
+            <figcaption>AITO M7 2024</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/aito_m7_2026.jpeg" alt="AITO M7 2026 vehicle" loading="lazy" decoding="async" />
+            <figcaption>AITO M7 2026</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/avatr_11.jpeg" alt="AVATR 11 vehicle" loading="lazy" decoding="async" />
+            <figcaption>AVATR 11</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/li_auto_l9.jpeg" alt="Li Auto L9 vehicle" loading="lazy" decoding="async" />
+            <figcaption>Li Auto L9</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/nio_et5.jpeg" alt="NIO ET5 vehicle" loading="lazy" decoding="async" />
+            <figcaption>NIO ET5</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/nio_et7.jpeg" alt="NIO ET7 vehicle" loading="lazy" decoding="async" />
+            <figcaption>NIO ET7</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/tesla_model_y.jpg" alt="Tesla Model Y vehicle" loading="lazy" decoding="async" />
+            <figcaption>Tesla Model Y</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/toyota_bz3x.jpg" alt="Toyota bZ3X vehicle" loading="lazy" decoding="async" />
+            <figcaption>Toyota bZ3X</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/xpeng_g9.jpeg" alt="XPeng G9 vehicle" loading="lazy" decoding="async" />
+            <figcaption>XPeng G9</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/xpeng_p7.jpeg" alt="XPeng P7 vehicle" loading="lazy" decoding="async" />
+            <figcaption>XPeng P7</figcaption>
+          </figure>
+          <figure class="vehicle-card">
+            <img src="docs/images/vehicles/xiaomi_yu7.jpeg" alt="Xiaomi YU7 vehicle" loading="lazy" decoding="async" />
+            <figcaption>Xiaomi YU7</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -475,9 +446,9 @@
                 <tr class="comparison-table__featured">
                   <th scope="row">PAVE</th>
                   <td><strong>2025</strong></td>
-                  <td><strong>32727</strong></td>
-                  <td><strong>222.24</strong></td>
-                  <td><strong>9</strong></td>
+                  <td><strong>9,255,068</strong></td>
+                  <td><strong>310.20</strong></td>
+                  <td><strong>11</strong></td>
                   <td><strong>H + A (labeled)</strong></td>
                   <td><strong>7 major cities in China and USA</strong></td>
                   <td><strong>9.9</strong></td>
@@ -494,27 +465,11 @@
           </div>
         </div>
 
-        <div class="card-grid card-grid-4">
-          <article class="panel info-card">
-            <span class="card-index">01</span>
-            <h3>Image Data</h3>
-            <p>Synchronized multi-view images from four cameras for perception and scene understanding.</p>
-          </article>
-          <article class="panel info-card">
-            <span class="card-index">02</span>
-            <h3>GNSS / IMU Trajectories</h3>
-            <p>High-precision vehicle trajectories for motion analysis and planning evaluation.</p>
-          </article>
-          <article class="panel info-card">
-            <span class="card-index">03</span>
-            <h3>Raw Video Data</h3>
-            <p>Continuous multi-camera recordings exist internally, but are not included in the current public release.</p>
-          </article>
-          <article class="panel info-card">
-            <span class="card-index">04</span>
-            <h3>Scenario Labels</h3>
-            <p>Structured attributes describe road type, traffic conditions, lighting, and environmental context.</p>
-          </article>
+        <div class="card-grid card-grid-4 dataset-snapshot-grid" aria-label="PAVE database snapshot">
+          <article class="panel stat-card"><span class="stat-label">Vehicle Count</span><strong>11</strong><p>Vehicles represented in the current database.</p></article>
+          <article class="panel stat-card"><span class="stat-label">FrameGroup</span><strong>9,255,068</strong><p>Synchronized frame groups.</p></article>
+          <article class="panel stat-card"><span class="stat-label">Valid Driving Time</span><strong>310.20 h</strong><p>Driving time after the release validity filter.</p></article>
+          <article class="panel stat-card"><span class="stat-label">ENU Distance</span><strong>14,618.53 km</strong><p>Accumulated distance in the local east-north-up frame.</p></article>
         </div>
       </div>
     </section>
@@ -531,7 +486,7 @@
 
         <figure class="panel media-panel">
           <img
-            src="docs/images/figure_scenarios.png"
+            src="docs/images/site/figure_scenarios.png"
             alt="Representative PAVE multi-view images with object annotations and scene labels."
           />
         </figure>
@@ -539,69 +494,297 @@
         <div class="card-grid annotation-grid">
           <article class="panel info-card">
             <span class="card-index">01</span>
-            <h3>Area Type</h3>
-            <p><strong>Values</strong> [highway, urban, residential, rural, parking, other]</p>
+            <h3>Area</h3>
+            <p><code>area_type</code> describes the dominant road context.</p>
             <ul>
-              <li><strong>highway</strong>: expressways, ramps, toll stations, and other high-speed roads.</li>
-              <li><strong>urban</strong>: city roads with dense intersections and roadside buildings.</li>
-              <li><strong>residential</strong>: internal roads in campuses, communities, or industrial parks.</li>
-              <li><strong>rural</strong>: suburban or non-urban segments of national or provincial roads.</li>
-              <li><strong>parking</strong>: parking lots, garages, or designated parking areas.</li>
-              <li><strong>other</strong>: uncategorized or mixed cases.</li>
+              <li><strong><code>highway</code></strong>: expressways, urban expressways, elevated roads, ramps, and toll areas.</li>
+              <li><strong><code>urban</code></strong>: city arterials, local roads, intersections, and built-up roadside areas.</li>
+              <li><strong><code>residential</code></strong>: residential, campus, park, or internal community roads.</li>
+              <li><strong><code>rural</code></strong>: suburban, rural, national, or provincial roads outside dense urban areas.</li>
+              <li><strong><code>parking</code></strong>: parking lots, garages, or designated parking areas.</li>
+              <li><strong><code>other</code></strong>: mixed, unclear, or out-of-category road contexts.</li>
             </ul>
           </article>
 
           <article class="panel info-card">
             <span class="card-index">02</span>
             <h3>Lighting</h3>
-            <p><strong>Values</strong> [day, dusk, dawn, night, night_lit, night_unlit, other]</p>
+            <p><code>lighting</code> records the visible illumination condition.</p>
             <ul>
-              <li><strong>day</strong>: sufficient natural light, including overcast daytime.</li>
-              <li><strong>dusk</strong>: evening around sunset.</li>
-              <li><strong>dawn</strong>: low-light morning before full daylight.</li>
-              <li><strong>night</strong>: general nighttime conditions.</li>
-              <li><strong>night_lit</strong>: nighttime with clear artificial illumination.</li>
-              <li><strong>night_unlit</strong>: nighttime with little roadside lighting.</li>
+              <li><strong><code>day</code></strong>: sufficient natural daylight, including overcast daytime.</li>
+              <li><strong><code>dawn</code></strong> and <strong><code>dusk</code></strong>: low-light transition periods around sunrise or sunset.</li>
+              <li><strong><code>night</code></strong>: general nighttime conditions.</li>
+              <li><strong><code>night_lit</code></strong>: nighttime with clear artificial or roadside lighting.</li>
+              <li><strong><code>night_unlit</code></strong>: nighttime with weak or absent artificial lighting.</li>
+              <li><strong><code>other</code></strong>: mixed or unclear illumination.</li>
             </ul>
           </article>
 
           <article class="panel info-card">
             <span class="card-index">03</span>
             <h3>Weather</h3>
-            <p><strong>Values</strong> [clear, cloudy, rain, snow, fog, other]</p>
+            <p><code>weather</code> describes atmospheric and precipitation conditions.</p>
             <ul>
-              <li><strong>clear</strong>: stable conditions without precipitation.</li>
-              <li><strong>cloudy</strong>: overcast conditions with reduced direct sunlight.</li>
-              <li><strong>rain</strong>: active rainfall or post-rain wet-road conditions.</li>
-              <li><strong>snow</strong>: snowfall or snow-covered scenes.</li>
-              <li><strong>fog</strong>: fog, haze, or reduced-visibility atmosphere.</li>
-              <li><strong>other</strong>: unclear or uncommon weather conditions.</li>
+              <li><strong><code>clear</code></strong>: no notable precipitation or visibility obstruction.</li>
+              <li><strong><code>cloudy</code></strong>: overcast or mostly cloudy conditions.</li>
+              <li><strong><code>rain</code></strong>: active rainfall or a wet-road rain context.</li>
+              <li><strong><code>snow</code></strong>: snowfall or snow-covered surroundings.</li>
+              <li><strong><code>fog</code></strong>: fog, haze, or visibly reduced atmospheric clarity.</li>
+              <li><strong><code>other</code></strong>: mixed, unusual, or unclear weather.</li>
             </ul>
           </article>
 
           <article class="panel info-card">
             <span class="card-index">04</span>
             <h3>Road Surface</h3>
-            <p><strong>Values</strong> [paved, unpaved, other]</p>
+            <p><code>road_surface_type</code> describes the drivable surface.</p>
             <ul>
-              <li><strong>paved</strong>: asphalt or concrete roads with typical on-road characteristics.</li>
-              <li><strong>unpaved</strong>: dirt, gravel, or temporary construction paths.</li>
-              <li><strong>other</strong>: mixed or unclear surface types.</li>
+              <li><strong><code>paved</code></strong>: asphalt, concrete, or another finished road surface.</li>
+              <li><strong><code>unpaved</code></strong>: dirt, gravel, or a temporary construction path.</li>
+              <li><strong><code>other</code></strong>: mixed or unclear surface conditions.</li>
             </ul>
           </article>
 
           <article class="panel info-card">
             <span class="card-index">05</span>
             <h3>Driving State</h3>
-            <p><strong>Values</strong> [stop, follow, cruise, lane_change, turn, other]</p>
+            <p><code>driving_state</code> describes frame-group motion behavior.</p>
             <ul>
-              <li><strong>stop</strong>: stationary or nearly stationary at lights or stop lines.</li>
-              <li><strong>follow</strong>: closely following a leading vehicle.</li>
-              <li><strong>cruise</strong>: steady lane-keeping without close interaction.</li>
-              <li><strong>lane_change</strong>: active lane change or boundary crossing.</li>
-              <li><strong>turn</strong>: turning or traversing a sustained curved path.</li>
-              <li><strong>other</strong>: insufficient evidence or out-of-schema behaviors.</li>
+              <li><strong>Values:</strong> <strong><code>stop</code></strong>, <strong><code>follow</code></strong>, <strong><code>cruise</code></strong>, <strong><code>lane_change_left</code></strong>, <strong><code>lane_change_right</code></strong>, <strong><code>turn_left</code></strong>, <strong><code>turn_right</code></strong>, <strong><code>other</code></strong>.</li>
+              <li><strong>Window:</strong> the state uses a <code>6000 ms</code> history and a <code>4000 ms</code> future window.</li>
+              <li><strong>Stop:</strong> current speed &lt; <code>0.5 m/s</code> and future displacement ≤ <code>2.0 m</code>; the fallback allows ≤ <code>3.0 m</code> with future speed &lt; <code>0.5 m/s</code>.</li>
+              <li><strong>Turn:</strong> heading change ≥ <code>22°</code> or <code>15°</code>, past/future displacement ≥ <code>6/5 m</code>, and current/future speed ≥ <code>2 m/s</code>.</li>
+              <li><strong>Lane change:</strong> heading change <code>2°–18°</code>; the stricter branch starts at <code>4°</code>, with lateral displacement ≥ <code>1.0/1.5 m</code> and forward displacement ≥ <code>8 m</code>.</li>
+              <li><strong>Follow:</strong> a lead vehicle is within ≤ <code>25 m</code>; without lane geometry, a lead-box center between <code>35%–65%</code> of image width is the same-lane range.</li>
             </ul>
+          </article>
+
+          <article class="panel info-card">
+            <span class="card-index">06</span>
+            <h3>Vehicle and VRU Density</h3>
+            <p><code>vehicle_density</code> and <code>vru_density</code> summarize the number of road users in a frame group.</p>
+            <ul>
+              <li><strong>Vehicle:</strong> <strong><code>low</code></strong> ≤ <code>5</code>, <strong><code>mid</code></strong> = <code>6–15</code>, <strong><code>high</code></strong> &gt; <code>15</code>.</li>
+              <li><strong>VRU:</strong> <strong><code>low</code></strong> ≤ <code>3</code>, <strong><code>mid</code></strong> = <code>4–10</code>, <strong><code>high</code></strong> &gt; <code>10</code>.</li>
+              <li>Vehicle and VRU categories are counted separately and stored as categorical fields.</li>
+            </ul>
+          </article>
+
+          <article class="panel info-card">
+            <span class="card-index">07</span>
+            <h3>Traffic Facilities</h3>
+            <p><strong><code>TrafficFacility</code></strong> records traffic-control objects in the scene.</p>
+            <ul>
+              <li><strong>Types:</strong> <strong><code>traffic_light</code></strong> and <strong><code>traffic_sign</code></strong>.</li>
+              <li><strong>Fields:</strong> <code>facility_type</code>, <code>mask_format</code>, <code>mask_data</code>, <code>x1</code>/<code>y1</code>/<code>x2</code>/<code>y2</code>, <code>score</code>, and <code>source</code>.</li>
+              <li><strong>Presence:</strong> <code>has_traffic_light</code> and <code>has_traffic_sign</code> are true when at least one matching facility exists in the frame group.</li>
+            </ul>
+          </article>
+
+          <article class="panel info-card">
+            <span class="card-index">08</span>
+            <h3>Traffic Participants</h3>
+            <p><strong><code>TrafficParticipant</code></strong> describes road users visible in individual frames.</p>
+            <ul>
+              <li><strong>Classes:</strong> <strong><code>vehicle</code></strong>, <strong><code>pedestrian</code></strong>, <strong><code>bicycle</code></strong>, <strong><code>electric_bicycle</code></strong>, and <strong><code>motorcycle</code></strong>.</li>
+              <li><strong>Fields:</strong> <code>class_name</code>, <code>mask_format</code>, <code>mask_data</code>, <code>x1</code>/<code>y1</code>/<code>x2</code>/<code>y2</code>, <code>score</code>, and <code>track_id</code>.</li>
+              <li><strong>Geometry:</strong> <code>depth_median_m</code>, <code>depth_mean_m</code>, <code>depth_min_m</code>, <code>depth_max_m</code>, <code>distance_m</code>, and <code>rel_x_m</code>/<code>rel_y_m</code>/<code>rel_z_m</code>.</li>
+            </ul>
+          </article>
+
+          <article class="panel info-card">
+            <span class="card-index">09</span>
+            <h3>Lane Lines and 3D Detection</h3>
+            <p><strong><code>LaneLine</code></strong> stores lane-boundary geometry, while <strong><code>Object3DDetection</code></strong> stores frame-level 3D targets.</p>
+            <ul>
+              <li><strong>Lane-line fields:</strong> <code>lane_slot</code>, <code>point_format</code>, <code>points_data</code>, <code>point_count</code>, <code>x_min</code>/<code>y_min</code>/<code>x_max</code>/<code>y_max</code>, and <code>source</code>.</li>
+              <li><strong>3D fields:</strong> <code>class_name</code>, original/model 2D boxes, <code>bbox3d_format</code>, <code>bbox3d_data</code>, camera-frame center, <code>width_m</code>/<code>height_m</code>/<code>length_m</code>, <code>yaw_rad</code>, and <code>confidence</code>.</li>
+              <li>Both records remain linked to their source <code>frame</code> and retain raw payload fields when available.</li>
+            </ul>
+          </article>
+
+          <article class="panel info-card">
+            <span class="card-index">10</span>
+            <h3>Driving Mode</h3>
+            <ul>
+              <li><strong><code>AV</code></strong>: Autonomous Vehicle.</li>
+              <li><strong><code>HV</code></strong>: Human-driven Vehicle.</li>
+              <li><strong><code>Unknown</code></strong>: unavailable or undetermined driving mode.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="data-format" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Data Format</p>
+          <h2>Database Structure and Public Data Format</h2>
+          <p>PAVE uses a synchronized frame group as the primary unit: camera frames, localization, operating mode, scenario attributes, and instance annotations share timestamps and database identifiers.</p>
+        </div>
+
+        <div class="panel schema-panel">
+          <div class="schema-panel-heading">
+            <div><span class="card-index">01</span><h3>Relational Database Structure</h3></div>
+            <p>The frame group connects synchronized sensor records with scene-level and frame-level annotations.</p>
+          </div>
+          <div class="schema-diagram" role="img" aria-label="PAVE database relationship diagram showing vehicle and sensor records connected through frame groups and frames to scene and instance annotations.">
+            <div class="schema-diagram__legend" aria-hidden="true">
+              <span class="schema-legend-item schema-legend-item--source">Vehicle and sensor records</span>
+              <span class="schema-legend-item schema-legend-item--hub">Synchronized records</span>
+              <span class="schema-legend-item schema-legend-item--scene">Scene and instance labels</span>
+            </div>
+
+            <div class="schema-flow-row">
+              <div class="schema-node schema-node--source">
+                <strong class="schema-node__title">Vehicle</strong>
+                <span class="schema-node__meta">platform metadata</span>
+              </div>
+              <div class="schema-connector"><span class="schema-relation">1:N</span><span class="schema-arrow" aria-hidden="true">→</span></div>
+              <div class="schema-node schema-node--source">
+                <strong class="schema-node__title">Camera</strong>
+                <span class="schema-node__meta">roles and calibration</span>
+              </div>
+              <div class="schema-connector"><span class="schema-relation">1:N</span><span class="schema-arrow" aria-hidden="true">→</span></div>
+              <div class="schema-node schema-node--source">
+                <strong class="schema-node__title">Video</strong>
+                <span class="schema-node__meta">streams and timestamps</span>
+              </div>
+            </div>
+
+            <div class="schema-flow-row schema-flow-row--sync">
+              <div class="schema-node schema-node--source">
+                <strong class="schema-node__title">GNSS</strong>
+                <span class="schema-node__meta">WGS84, ENU, motion state</span>
+              </div>
+              <div class="schema-connector"><span class="schema-relation">1:N</span><span class="schema-arrow" aria-hidden="true">→</span></div>
+              <div class="schema-node schema-node--hub">
+                <strong class="schema-node__title">FrameGroup</strong>
+                <span class="schema-node__meta">synchronized vehicle-time hub</span>
+              </div>
+              <div class="schema-connector"><span class="schema-relation">1:N</span><span class="schema-arrow" aria-hidden="true">→</span></div>
+              <div class="schema-node schema-node--hub">
+                <strong class="schema-node__title">Frame</strong>
+                <span class="schema-node__meta">camera frame and mode link</span>
+              </div>
+            </div>
+
+            <div class="schema-branch-grid">
+              <section class="schema-branch schema-branch--scene">
+                <div class="schema-branch-heading">
+                  <strong>FrameGroup relationships</strong>
+                  <span>1:1 / N:1</span>
+                </div>
+                <div class="schema-branch-list">
+                  <div class="schema-node schema-node--scene"><strong class="schema-node__title">ScenarioAnnotation</strong><span class="schema-node__meta">scene context · 1:1</span></div>
+                  <div class="schema-node schema-node--scene"><strong class="schema-node__title">SemanticAnnotation</strong><span class="schema-node__meta">text description · 1:1</span></div>
+                  <div class="schema-node schema-node--scene"><strong class="schema-node__title">DriverIntent</strong><span class="schema-node__meta">intent dictionary · N:1</span></div>
+                  <div class="schema-node schema-node--scene"><strong class="schema-node__title">RoadSlopeState</strong><span class="schema-node__meta">slope dictionary · N:1</span></div>
+                </div>
+              </section>
+
+              <section class="schema-branch schema-branch--instance">
+                <div class="schema-branch-heading">
+                  <strong>Frame relationships</strong>
+                  <span>1:N</span>
+                </div>
+                <div class="schema-branch-list">
+                  <div class="schema-node schema-node--instance"><strong class="schema-node__title">TrafficParticipant</strong><span class="schema-node__meta">road-user instances</span></div>
+                  <div class="schema-node schema-node--instance"><strong class="schema-node__title">TrafficFacility</strong><span class="schema-node__meta">traffic-control instances</span></div>
+                  <div class="schema-node schema-node--instance"><strong class="schema-node__title">LaneLine</strong><span class="schema-node__meta">lane geometry</span></div>
+                  <div class="schema-node schema-node--instance"><strong class="schema-node__title">Object3DDetection</strong><span class="schema-node__meta">3D target records</span></div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel schema-tables-panel">
+          <div class="schema-panel-heading">
+            <div><span class="card-index">02</span><h3>Current Data Tables</h3></div>
+            <p>Primary keys and foreign keys show how the relational records are connected.</p>
+          </div>
+          <div class="specification-table-wrap" role="region" aria-label="PAVE database table structure" tabindex="0">
+            <table class="specification-table schema-table">
+              <thead><tr><th>Table</th><th>Key relationship</th><th>Current structure</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><code>vehicle</code></th><td><code>id</code> primary key</td><td>Vehicle platform metadata, type, identity, model information, and vehicle-level calibration.</td></tr>
+                <tr><th scope="row"><code>camera</code></th><td><code>vehicle_id</code> → <code>vehicle.id</code></td><td>Camera role, brand, FOV, image size, intrinsic matrix, distortion, and camera-to-vehicle extrinsic matrix.</td></tr>
+                <tr><th scope="row"><code>video</code></th><td><code>camera_id</code> → <code>camera.id</code></td><td>Video path, sequence, UTC time range, FPS, duration, codec, and resolution.</td></tr>
+                <tr><th scope="row"><code>drive_mode</code></th><td><code>vehicle_id</code> → <code>vehicle.id</code></td><td>Vehicle-specific mode key, display name, automation level, and description.</td></tr>
+                <tr><th scope="row"><code>frame_group</code></th><td><code>vehicle_id</code>, <code>gnss_id</code>, <code>driver_intent_id</code>, <code>road_slope_state_id</code></td><td>Synchronized vehicle-time record with sequence, UTC/local timestamps, localization link, intent, and road-slope state.</td></tr>
+                <tr><th scope="row"><code>frame</code></th><td><code>video_id</code>, <code>camera_id</code>, <code>frame_group_id</code>, <code>drive_mode_id</code></td><td>Frame index, timestamp, image path, video time, frame-level driving mode, mode confidence, and ADS indicator state.</td></tr>
+                <tr><th scope="row"><code>gnss</code></th><td><code>vehicle_id</code> → <code>vehicle.id</code></td><td>UTC samples with WGS84 position, ENU coordinates, speed, course, RTK status, satellite quality, and INS fields.</td></tr>
+                <tr><th scope="row"><code>driver_intent</code></th><td><code>id</code> dictionary key</td><td>Driving-intent dictionary such as straight, left, and right.</td></tr>
+                <tr><th scope="row"><code>road_slope_state</code></th><td><code>id</code> dictionary key</td><td>Road-slope dictionary for uphill, downhill, and flat states.</td></tr>
+                <tr><th scope="row"><code>semantic_annotation</code></th><td><code>frame_group_id</code> → <code>frame_group.id</code></td><td>Frame-group text description, language, model metadata, categories, tags, confidence, and notes.</td></tr>
+                <tr><th scope="row"><code>scenario_annotation</code></th><td><code>frame_group_id</code> → <code>frame_group.id</code></td><td>Area, lighting, weather, road surface, driving state, densities, facility flags, environmental fields, tags, source, and confidence.</td></tr>
+                <tr><th scope="row"><code>traffic_participant</code></th><td><code>frame_id</code> → <code>frame.id</code></td><td>Road-user class, mask, bounding box, score, track identity, depth, distance, and relative position.</td></tr>
+                <tr><th scope="row"><code>traffic_facility</code></th><td><code>frame_id</code> → <code>frame.id</code></td><td>Traffic-light/sign type, mask, bounding box, score, source, and facility-level metadata.</td></tr>
+                <tr><th scope="row"><code>lane_line</code></th><td><code>frame_id</code> → <code>frame.id</code></td><td>Lane slot, point format, point-set JSON, point count, geometry bounds, and source metadata.</td></tr>
+                <tr><th scope="row"><code>object_3d_detection</code></th><td><code>frame_id</code> → <code>frame.id</code></td><td>Object class, 2D/3D boxes, camera-frame center, dimensions, yaw, scores, detector metadata, and raw payload.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel specification-panel">
+          <div class="specification-heading">
+            <div><span class="card-index">03</span><h3>Sensor Specifications in the Current Database</h3></div>
+            <p>Six camera roles are present. A frame group may contain a subset, while localization and optional vehicle signals follow their own timing.</p>
+          </div>
+          <div class="specification-table-wrap" role="region" aria-label="PAVE sensor specification table" tabindex="0">
+            <table class="specification-table sensor-specification-table">
+              <thead><tr><th>Sensor / signal</th><th>Stored parameters</th><th>Frequency / timing</th><th>Database representation</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">RGB cameras</th><td><code>front_wide</code>, <code>front_tele</code>, <code>left_wide</code>, <code>right_wide</code>, <code>rear_tele</code>, <code>inside</code>; FOV, resolution, intrinsic, distortion, and extrinsic parameters. Exterior cameras support <code>2K</code> at <code>30 Hz</code>; the inside camera supports <code>1080p</code> at <code>30 Hz</code>.</td><td>All collected camera data are standardized to <code>1080p</code> at <code>10 Hz</code>.</td><td><code>camera</code>, <code>video</code>, and <code>frame</code></td></tr>
+                <tr><th scope="row">RTK-GNSS / INS</th><td>WGS84 latitude/longitude/altitude, ENU E/N/U, speed, course, fix state, satellite count, HDOP, RTK fields, and INS attitude/status.</td><td>Raw trajectory ≈<code>20 Hz</code>; aligned frame-group records ≈<code>10 Hz</code>; UTC millisecond timestamps.</td><td><code>gnss</code>, linked from <code>frame_group</code>; no independent <code>imu</code> table</td></tr>
+                <tr><th scope="row">CAN bus</th><td>Optional vehicle-state signals, including available energy or state-of-charge fields.</td><td>≈<code>10 Hz</code> when supported; signal availability varies by vehicle.</td><td>No independent <code>can</code> table exists in the current database.</td></tr>
+                <tr><th scope="row">Synchronization / frames</th><td>UTC timestamps, vehicle frame (x forward, y left, z up), camera frame, and local ENU coordinate convention.</td><td>Sensor synchronization error controlled within approximately <code>50 ms</code>.</td><td>Timestamp fields in <code>video</code>, <code>frame</code>, <code>frame_group</code>, and <code>gnss</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="data-format-grid">
+          <article class="panel data-format-card">
+            <span class="card-index">04</span>
+            <h3>Release Layout</h3>
+            <p>Public metadata is serialized as JSON while images remain under the release root.</p>
+            <pre class="schema-code"><code>pave_release/
+├── data.json
+└── images/
+    └── &lt;framegroup_id&gt;_&lt;timestamp&gt;_&lt;camera_role&gt;.jpg</code></pre>
+            <ul>
+              <li><code>framegroup_id</code> joins images, trajectory samples, and labels.</li>
+              <li>Legacy archives may use <code>images_blurred/</code>; paths remain relative to the release root.</li>
+              <li>Frame-group, frame, and track identifiers preserve one-to-many annotation records.</li>
+            </ul>
+          </article>
+
+          <article class="panel data-format-card">
+            <span class="card-index">05</span>
+            <h3>Logical Record</h3>
+            <p>The public record is a frame-group view of the linked database entities; optional values may be empty.</p>
+            <pre class="schema-code"><code>{
+  "framegroup_id": 123,
+  "frames": [{
+    "image_name": "..._front_wide.jpg",
+    "camera_type": "front_wide",
+    "camera_calibration": {"intrinsic": "...", "distortion": "...", "extrinsic": "..."}
+  }],
+  "timestamp": 1753564625700,
+  "drive_intent": null,
+  "drive_mode": "auto",
+  "objects": [],
+  "environment": {"weather": "clear", "illumination": "day", "traffic_density": "mid"},
+  "scenario_category": null,
+  "language_description": null,
+  "trajectory": [{"timestamp": 1753564625700, "x_m": 0.0, "y_m": 0.0, "z_m": 0.0, "speed_mps": 2.4}]
+}</code></pre>
+            <p class="data-format-note">Images are RGB records; trajectory values use SI units and timestamps are milliseconds. The public record does not introduce a separate CAN table.</p>
           </article>
         </div>
       </div>
@@ -658,7 +841,7 @@
           <p class="section-tag">Access</p>
           <h2>Academic Release and Usage Terms</h2>
           <p>
-            This repository currently releases a selected academic subset for non-commercial research, method development, and scientific publication.
+            The Dataset is made available solely for non-commercial academic research, method development, education, and scientific publication.
           </p>
         </div>
 
@@ -684,28 +867,33 @@
 
           <article class="panel access-card">
             <h3>License Summary</h3>
-            <p>The release is governed by the PAVE Academic Non-Commercial License v1.0.</p>
+            <p>The Dataset is provided under the PAVE Academic Non-Commercial License v1.0.</p>
             <ul>
-              <li>Permitted: academic research, scientific investigation, non-commercial benchmarking, theses, and papers.</li>
-              <li>Prohibited: commercial use, redistribution, resale, sublicensing, or proprietary deployment.</li>
-              <li>Commercial use requires a separate licensing agreement.</li>
+              <li>Permitted: academic research, scientific investigation, method development, validation, benchmarking, peer-reviewed publication, theses, dissertations, and non-commercial teaching.</li>
+              <li>Prohibited: commercial or industrial use, including product/system development, internal industrial evaluation, deployment training, consulting, contract research, or paid services.</li>
+              <li>Redistribution, resale, sublicensing, or sharing of the Dataset or any modified or derived version is prohibited.</li>
+              <li>Use in a proprietary or closed-source commercial system is prohibited.</li>
+              <li>Commercial or industrial use requires a separate licensing agreement.</li>
             </ul>
-            <a class="inline-link" href="License.txt">Read full license</a>
+            <a class="inline-link" href="License.txt">Read formal license</a>
+            <a class="inline-link" href="docs/archive/legacy-assets/Readme.txt">Read usage summary</a>
           </article>
 
           <article class="panel access-card">
             <h3>Usage Conditions</h3>
             <ul>
-              <li>Proper citation of the PAVE paper is mandatory.</li>
-              <li>Dataset usage alone does not justify co-authorship.</li>
-              <li>The release is provided as is, without warranty.</li>
-              <li>Violation of license terms results in automatic termination.</li>
+              <li>Any publication, presentation, report, or derivative work using the Dataset must cite the PAVE paper; failure to cite constitutes misuse.</li>
+              <li>Dataset use alone grants no authorship or co-authorship; authorship requires a substantial intellectual contribution.</li>
+              <li>The Dataset is provided as is, without warranty; the authors and copyright holders are not liable for claims or damages arising from use.</li>
+              <li>License violations automatically terminate the license, and all Dataset copies must then be deleted.</li>
+              <li>Users must respect data privacy, applicable regulations, and rigorous scientific and ethical standards.</li>
+              <li>Unauthorized commercial use will be pursued under applicable licensing agreements.</li>
             </ul>
           </article>
 
           <article class="panel access-card">
             <h3>Full Dataset &amp; Licensing</h3>
-            <p>For full-dataset access, commercial licenses, industrial evaluation services, or extended annotations and benchmarks:</p>
+            <p>For full dataset access, commercial licensing, extended access, usage-rights clarification, industrial evaluation services, or extended annotations and benchmarks:</p>
             <a class="inline-link" href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
           </article>
         </div>
@@ -717,7 +905,7 @@
         <div class="section-head center">
           <p class="section-tag">Citation</p>
           <h2>Please Cite the Dataset Paper</h2>
-          <p>Citation is a formal requirement for any research output that uses this dataset, even partially.</p>
+          <p>Citation is mandatory for any publication, presentation, report, or derivative work using this Dataset, even partially; failure to cite constitutes misuse.</p>
         </div>
 
         <div class="panel citation-card">
@@ -745,7 +933,7 @@
             <p class="section-tag">Contact</p>
             <h2>Dataset Inquiries and Licensing Requests</h2>
             <p>
-              Please reach out for full dataset access, licensing clarification, extended benchmarks, or industry collaboration around autonomous-vehicle evaluation.
+              Please contact the maintainers for full dataset access, commercial licensing, usage-rights clarification, extended benchmarks, or industrial evaluation services.
             </p>
           </div>
 
